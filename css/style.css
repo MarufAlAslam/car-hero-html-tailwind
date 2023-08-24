@@ -32,10 +32,16 @@ section.form {
   position: relative;
   top: -50px;
   z-index: 1000;
+  margin-bottom: -50px;
 }
 
 .grid-input {
   border-radius: 5px;
   border: 1px solid #f4f4f4;
   background: #fcfbfb;
+}
+
+.outline {
+  border-radius: 5px;
+  border: 2px solid #374360;
 }
