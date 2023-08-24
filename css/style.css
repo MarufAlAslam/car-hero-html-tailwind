@@ -54,3 +54,7 @@ section.form {
 .brand-item img {
   width: 50px;
 }
+.heart {
+  right: 50px;
+  bottom: -18px;
+}
