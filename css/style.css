@@ -66,6 +66,21 @@ img#flag {
   object-fit: contain;
 }
 
+/* listing page */
+.listing-hero {
+  background: url("../img/listing-hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+input[type=range]::-webkit-slider-thumb {
+	pointer-events: all;
+	width: 24px;
+	height: 24px;
+	-webkit-appearance: none;
+  /* @apply w-6 h-6 appearance-none pointer-events-auto; */
+  }
+
 @media screen and (max-width: 767px) {
   .menu {
     background: white;
@@ -123,4 +138,7 @@ img#flag {
   .sm-text {
     margin-bottom: 20px;
   }
+
+
+  /* car listing */
 }

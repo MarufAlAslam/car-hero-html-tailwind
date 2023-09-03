@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarHero</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <div class="navbar py-[20px]">
+      <div class="container">
+        <div class="flex justify-between items-center">
+          <div class="burger md:hidden block">
+            <button class="menu-toggler" id="toggler">
+              <i class="fa fa-bars text-2xl"></i>
+            </button>
+          </div>
+          <div class="left flex justify-start items-center gap-[48px]">
+            <a href="">
+              <img src="img/logo.png" class="logo" alt="" />
+            </a>
+            <div class="menu-bg" id="menu-bg"></div>
+            <div
+              id="menu"
+              class="menu flex justify-start items-center gap-[40px]"
+            >
+              <a href="" class="text-black"> 首頁 </a>
+              <a href="" class="text-black"> 車盤列表 </a>
+              <a href="" class="text-black"> 車盤列表 </a>
+              <a href="" class="text-black"> 出售 </a>
+              <a href="" class="text-black"> 購買 </a>
+              <a href="" class="text-black"> 使用者中心 </a>
+            </div>
+          </div>
+
+          <div class="right flex justify-end items-center gap-[40px]">
+            <a
+              href=""
+              class="md:flex hidden justify-center items-center gap-[10px] text-[#F3A94D]"
+            >
+              <img src="img/lock.svg" alt="" />
+              註冊
+            </a>
+
+            <a
+              href=""
+              class="bg-[#F3A94D] text-white rounded-[5px] px-[45px] py-[15px] md:flex hidden gap-[10px] justify-center items-center"
+            >
+              <img src="img/user.svg" alt="" />
+              登入
+            </a>
+
+            <button class="btn bg-transparent p-0 md:hidden block">
+              <i class="fa fa-search text-2xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- navbar -->
+
+    <!-- listing-hero -->
+    <section class="listing-hero py-[100px]">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="text-[40px] text-white">車盤列表</h2>
+        </div>
+      </div>
+    </section>
+    <!-- listing-hero -->
+
+    <div class="bg-[#F5F5F7]">
+      <!-- search card -->
+      <section class="search-card relative top-[-50px] z-10 mb-[-50px]">
+        <div class="container">
+          <div
+            class="card bg-white shadow-md md:px-[40px] py-[20px] rounded-[15px]"
+          >
+            <div class="flex md:flex-row flex-col gap-[15px] justify-between items-center md:px-0 px-[20px] w-full">
+              <p class="md:text-xl text-[#6E757C] text-left w-full">Showing 1 - 10 of 50 results</p>
+              <form action="" class="md:w-auto w-full">
+                <select
+                  name=""
+                  class="border rounded-[15px] md:w-[310px] w-full py-[16px] px-[25px] bg-[#FCFBFB]"
+                  id=""
+                >
+                  <option value="">Sort by</option>
+                  <option value="">Sort by</option>
+                  <option value="">Sort by</option>
+                  <option value="">Sort by</option>
+                </select>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- search card -->
+
+      <!-- listing -->
+      <section class="listing py-[30px]">
+        <div class="container">
+          <div class="flex md:flex-row flex-col justify-between items-start gap-[20px]">
+            <div class="options md:w-[25%] w-full">
+                <button class="btn filterBtn w-full md:hidden mb-[30px] flex justify-center items-center text-center p-[14px] bg-[#F3A94D] rounded-[8px]" id="filterBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <g clip-path="url(#clip0_30_56738)">
+                          <mask id="mask0_30_56738" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="22">
+                            <path d="M0 0H22V22H0V0Z" fill="white"/>
+                          </mask>
+                          <g mask="url(#mask0_30_56738)">
+                            <mask id="mask1_30_56738" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="22">
+                              <path d="M0 0H22V22H0V0Z" fill="white"/>
+                            </mask>
+                            <g mask="url(#mask1_30_56738)">
+                              <path d="M5.50013 8.25119C6.77939 8.25119 7.85752 7.37352 8.16398 6.18869H18.5434C18.9237 6.18869 19.232 5.88038 19.232 5.50009C19.232 5.1198 18.9237 4.81149 18.5434 4.81149H8.16398C7.85752 3.62666 6.77939 2.74899 5.50013 2.74899C3.98314 2.74899 2.74903 3.9831 2.74903 5.50009C2.74903 7.01708 3.98314 8.25119 5.50013 8.25119ZM5.50013 4.12619C6.25772 4.12619 6.87403 4.74254 6.87403 5.50009C6.87403 6.25768 6.25772 6.87399 5.50013 6.87399C4.74254 6.87399 4.12627 6.25768 4.12627 5.50009C4.12627 4.74254 4.74254 4.12619 5.50013 4.12619ZM18.5431 15.8689H8.16376C7.8573 14.684 6.77917 13.8064 5.49991 13.8064C3.98292 13.8064 2.74881 15.0405 2.74881 16.5575C2.74881 18.0745 3.98292 19.3086 5.49991 19.3086C6.77917 19.3086 7.8573 18.4309 8.16376 17.2461H18.5431C18.9235 17.2461 19.2317 16.9378 19.2317 16.5575C19.2317 16.1772 18.9235 15.8689 18.5431 15.8689ZM5.49991 17.9314C4.74232 17.9314 4.12605 17.315 4.12605 16.5575C4.12605 15.7999 4.74232 15.1836 5.49991 15.1836C6.2575 15.1836 6.87381 15.7999 6.87381 16.5575C6.87381 17.315 6.2575 17.9314 5.49991 17.9314ZM18.5624 10.3113H16.414C16.1075 9.12648 15.0294 8.24881 13.7502 8.24881C12.4709 8.24881 11.3928 9.12648 11.0863 10.3113H3.51454C3.13421 10.3113 2.82594 10.6196 2.82594 10.9999C2.82594 11.3802 3.13421 11.6885 3.51454 11.6885H11.0863C11.3928 12.8733 12.4709 13.751 13.7502 13.751C15.0294 13.751 16.1075 12.8733 16.414 11.6885H18.5624C18.9427 11.6885 19.251 11.3802 19.251 10.9999C19.251 10.6196 18.9427 10.3113 18.5624 10.3113ZM13.7502 12.3738C12.9926 12.3738 12.3763 11.7575 12.3763 10.9999C12.3763 10.2424 12.9926 9.62601 13.7502 9.62601C14.5078 9.62601 15.124 10.2424 15.124 10.9999C15.124 11.7575 14.5078 12.3738 13.7502 12.3738Z" fill="white"/>
+                            </g>
+                          </g>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_30_56738">
+                            <rect width="22" height="22" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                </button>
+              <div
+                class="card bg-white p-[24px] rounded-[20px] overflow-hidden md:block hidden transition-all duration-300 ease-in-out"
+                id="filterCard"
+              >
+                <form action="">
+                  <div
+                    class="form-group flex justify-between items-center px-[25px] py-[10px] border bg-[#FCFBFB] rounded-[5px]"
+                  >
+                    <input
+                      type="text"
+                      placeholder="search"
+                      class="bg-transparent outline-0 shadown-none"
+                      name=""
+                      id=""
+                    />
+                    <i class="fa fa-search text-[#F3A94D]"></i>
+                  </div>
+
+                  <hr class="my-4" />
+
+                  <div class="form-group mb-[35px]">
+                    <div
+                      class="flex mb-[20px] gap-[10px] justify-start items-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_30_50967)">
+                          <mask
+                            id="mask0_30_50967"
+                            style="mask-type: luminance"
+                            maskUnits="userSpaceOnUse"
+                            x="0"
+                            y="0"
+                            width="20"
+                            height="20"
+                          >
+                            <path d="M0 0H20V20H0V0Z" fill="white" />
+                          </mask>
+                          <g mask="url(#mask0_30_50967)">
+                            <mask
+                              id="mask1_30_50967"
+                              style="mask-type: luminance"
+                              maskUnits="userSpaceOnUse"
+                              x="0"
+                              y="0"
+                              width="20"
+                              height="20"
+                            >
+                              <path d="M0 0H20V20H0V0Z" fill="white" />
+                            </mask>
+                            <g mask="url(#mask1_30_50967)">
+                              <path
+                                d="M11.0581 18.3345C10.6623 18.3345 10.2901 18.1803 10.0102 17.9004V17.9004L2.09982 9.99004C1.93072 9.82087 1.80506 9.6133 1.73356 9.38504C1.66206 9.15678 1.64685 8.91461 1.68922 8.6792L2.6797 3.18492C2.70234 3.0593 2.76284 2.94359 2.85309 2.85333C2.94334 2.76306 3.05904 2.70254 3.18466 2.67988L8.67906 1.68928C8.91448 1.64689 9.15667 1.6621 9.38495 1.73359C9.61323 1.80508 9.82082 1.93074 9.99002 2.09984L17.9004 10.0102C18.1803 10.2901 18.3345 10.6623 18.3345 11.0582C18.3345 11.454 18.1803 11.8262 17.9003 12.1062L12.1061 17.9004C11.8262 18.1803 11.454 18.3345 11.0581 18.3345ZM3.8347 3.83488L2.92134 8.90124C2.91478 8.93778 2.91716 8.97536 2.92826 9.01078C2.93936 9.0462 2.95886 9.07842 2.9851 9.10468L10.8955 17.0151C10.9168 17.0365 10.9422 17.0535 10.9701 17.065C10.998 17.0766 11.0279 17.0825 11.0581 17.0825C11.0884 17.0825 11.1183 17.0766 11.1462 17.065C11.1741 17.0535 11.1995 17.0365 11.2208 17.0151L17.0151 11.2208C17.0365 11.1995 17.0535 11.1742 17.065 11.1462C17.0766 11.1183 17.0825 11.0884 17.0825 11.0582C17.0825 11.0226 17.0737 10.9541 17.0151 10.8955L9.1047 2.98516C9.07845 2.9589 9.04623 2.93938 9.01079 2.92828C8.97536 2.91718 8.93776 2.91482 8.90122 2.9214L3.8347 3.83488Z"
+                                fill="#111111"
+                              />
+                              <path
+                                d="M6.66644 7.48638C6.63964 7.48638 6.6124 7.48518 6.5856 7.48238C6.55904 7.47959 6.53263 7.47558 6.50644 7.47038C6.48004 7.46518 6.45404 7.45838 6.42844 7.45078C6.40284 7.44278 6.37764 7.43398 6.35284 7.42358C6.32804 7.41358 6.30364 7.40198 6.28044 7.38958C6.25684 7.37678 6.23364 7.36318 6.21124 7.34838C6.1888 7.33358 6.16724 7.31718 6.14644 7.30038C6.1256 7.28358 6.10564 7.26518 6.08684 7.24638C6.06768 7.22758 6.04964 7.20718 6.0324 7.18638C6.0156 7.16558 5.99964 7.14398 5.98484 7.12158C5.95505 7.07698 5.92973 7.02955 5.90924 6.97998C5.89924 6.95558 5.89004 6.92998 5.88204 6.90478C5.87448 6.87918 5.86764 6.85278 5.8624 6.82678C5.85724 6.80044 5.85325 6.77388 5.85044 6.74718C5.84768 6.72038 5.84644 6.69318 5.84644 6.66638C5.84644 6.63958 5.84768 6.61278 5.85044 6.58598C5.85324 6.55918 5.8572 6.53238 5.8624 6.50638C5.86764 6.47998 5.87448 6.45398 5.88204 6.42838C5.89004 6.40278 5.89924 6.37758 5.90924 6.35278C5.93 6.30334 5.95531 6.25594 5.98484 6.21118C5.99964 6.18918 6.0156 6.16718 6.0324 6.14638C6.04964 6.12558 6.06768 6.10558 6.08684 6.08678C6.10564 6.06758 6.1256 6.04958 6.14644 6.03238C6.18814 5.99854 6.23302 5.9688 6.28044 5.94358C6.30364 5.93118 6.32804 5.91958 6.35284 5.90918C6.37764 5.89918 6.40284 5.88998 6.42844 5.88238C6.45404 5.87438 6.48004 5.86798 6.50644 5.86238C6.5324 5.85718 6.55924 5.85318 6.5856 5.85038C6.63924 5.84518 6.69364 5.84518 6.74724 5.85038C6.77364 5.85318 6.80044 5.85718 6.82684 5.86238C6.85284 5.86798 6.8788 5.87438 6.90444 5.88238C6.93004 5.88998 6.95564 5.89918 6.98004 5.90918C7.00484 5.91958 7.02924 5.93118 7.05284 5.94358C7.07644 5.95598 7.09964 5.96998 7.12164 5.98478C7.14404 5.99958 7.1656 6.01558 7.18644 6.03238C7.20724 6.04958 7.22724 6.06758 7.24644 6.08678C7.26524 6.10558 7.28324 6.12558 7.30044 6.14638C7.31724 6.16718 7.33324 6.18918 7.34804 6.21118C7.36284 6.23358 7.3768 6.25678 7.38924 6.28038C7.402 6.30398 7.41364 6.32838 7.42364 6.35278C7.43404 6.37758 7.44284 6.40278 7.45084 6.42838C7.4584 6.45398 7.46524 6.47998 7.47044 6.50638C7.47564 6.53238 7.47964 6.55918 7.4824 6.58598C7.4852 6.61278 7.48644 6.63958 7.48644 6.66638C7.48644 6.69318 7.4852 6.72038 7.4824 6.74718C7.47964 6.77358 7.47564 6.80038 7.47044 6.82678C7.46506 6.85306 7.45852 6.87908 7.45084 6.90478C7.44284 6.92998 7.43404 6.95558 7.42364 6.97998C7.41364 7.00478 7.402 7.02918 7.38924 7.05278C7.3768 7.07638 7.36284 7.09958 7.34804 7.12158C7.33324 7.14398 7.31724 7.16558 7.30044 7.18638C7.28324 7.20718 7.26524 7.22758 7.24644 7.24638C7.20816 7.28426 7.16637 7.31841 7.12164 7.34838C7.09964 7.36318 7.07644 7.37678 7.05284 7.38958C7.02924 7.40198 7.00484 7.41358 6.98004 7.42358C6.95564 7.43398 6.93004 7.44278 6.90444 7.45078C6.8788 7.45838 6.85284 7.46518 6.82684 7.47038C6.80044 7.47558 6.77364 7.47958 6.74724 7.48238C6.72044 7.48518 6.69324 7.48638 6.66644 7.48638Z"
+                                fill="#111111"
+                              />
+                            </g>
+                          </g>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_30_50967">
+                            <rect width="20" height="20" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <span>選擇價格</span>
+                    </div>
+                    <div class="flex mb-[20px] justify-center items-center">
+                      <div
+                        x-data="range()"
+                        x-init="mintrigger(); maxtrigger()"
+                        class="relative max-w-xl w-full"
+                      >
+                        <div>
+                          <input
+                            type="range"
+                            step="100"
+                            x-bind:min="min"
+                            x-bind:max="max"
+                            x-on:input="mintrigger"
+                            x-model="minprice"
+                            class="absolute pointer-events-none appearance-none z-20 h-2 w-full opacity-0 cursor-pointer"
+                          />
+
+                          <input
+                            type="range"
+                            step="100"
+                            x-bind:min="min"
+                            x-bind:max="max"
+                            x-on:input="maxtrigger"
+                            x-model="maxprice"
+                            class="absolute pointer-events-none appearance-none z-20 h-2 w-full opacity-0 cursor-pointer"
+                          />
+
+                          <div class="relative z-10 h-2">
+                            <div
+                              class="absolute z-10 left-0 right-0 bottom-0 top-0 rounded-md bg-[#D9D9D9]"
+                            ></div>
+
+                            <div
+                              class="absolute z-20 top-0 bottom-0 rounded-md bg-[#F3A94D]"
+                              x-bind:style="'right:'+maxthumb+'%; left:'+minthumb+'%'"
+                            ></div>
+
+                            <div
+                              class="absolute z-30 w-6 h-6 top-0 left-0 bg-white border-2 border-[#F3A94D] rounded-full -mt-2 -ml-1"
+                              x-bind:style="'left: '+minthumb+'%'"
+                            ></div>
+
+                            <div
+                              class="absolute z-30 w-6 h-6 top-0 right-0 bg-white border-2 border-[#F3A94D] rounded-full -mt-2 -mr-3"
+                              x-bind:style="'right: '+maxthumb+'%'"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <p class="mt-3">$50,000 - $250,000</p>
+                  </div>
+                  <div class="form-group mb-[20px]">
+                    <div
+                      class="flex mb-[20px] gap-[10px] justify-start items-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <mask
+                          id="mask0_30_50956"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="0"
+                          y="0"
+                          width="20"
+                          height="20"
+                        >
+                          <path d="M0 0H20V20H0V0Z" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0_30_50956)">
+                          <mask
+                            id="mask1_30_50956"
+                            style="mask-type: luminance"
+                            maskUnits="userSpaceOnUse"
+                            x="0"
+                            y="0"
+                            width="20"
+                            height="20"
+                          >
+                            <path d="M0 0H20V20H0V0Z" fill="white" />
+                          </mask>
+                          <g mask="url(#mask1_30_50956)">
+                            <path
+                              d="M10.008 11.25C9.75803 11.25 9.54975 11.3416 9.38311 11.4749L7.41671 10.95C7.07511 10.8583 6.74187 11.0583 6.65019 11.3916C6.55855 11.7249 6.75851 12.0665 7.09179 12.1581L9.04979 12.683C9.20811 13.0663 9.58307 13.333 10.0163 13.333C10.5912 13.333 11.0578 12.8664 11.0578 12.2914C11.0578 11.7165 10.5829 11.25 10.008 11.25Z"
+                              fill="#0D0D0D"
+                            />
+                            <path
+                              d="M17.8737 10.1914C17.8654 10.1664 17.857 10.1581 17.8487 10.1331C16.6906 6.9003 13.616 4.58398 9.99993 4.58398C6.36721 4.58398 3.28437 6.9253 2.14289 10.1664C2.14289 10.1748 2.13457 10.1748 2.13457 10.1831V10.1914C1.83457 11.0496 1.66797 11.9661 1.66797 12.916V15.2073C1.66797 15.5489 1.95125 15.8322 2.29285 15.8322H17.7071C18.0487 15.8322 18.332 15.5489 18.332 15.2073V12.916C18.332 11.9661 18.1654 11.058 17.8737 10.2164V10.1914H17.8737ZM17.0822 14.5824H2.91777V12.916C2.91777 12.2911 3.00941 11.6912 3.15937 11.108L4.00925 11.3329C4.05925 11.3496 4.11757 11.3579 4.16757 11.3579C4.44253 11.3579 4.69249 11.1746 4.76749 10.8913C4.85909 10.5581 4.65917 10.2164 4.32589 10.1248L3.58429 9.93314C4.63417 7.70018 6.80881 6.0921 9.37509 5.86714V6.93362C9.37509 7.27522 9.65837 7.55854 9.99997 7.55854C10.3416 7.55854 10.6248 7.27522 10.6248 6.93362V5.87546C13.1911 6.10042 15.3658 7.7085 16.4072 9.94146L15.6657 10.1415C15.3324 10.2331 15.1325 10.5747 15.2241 10.908C15.2991 11.1913 15.5491 11.3746 15.824 11.3746C15.874 11.3746 15.9324 11.3663 15.9823 11.3496L16.8239 11.1246C16.9738 11.6995 17.0655 12.3078 17.0655 12.9327V14.5824H17.0822Z"
+                              fill="#0D0D0D"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                      <span>選擇里程</span>
+                    </div>
+                    <div class="flex mb-[20px] justify-center items-center">
+                      <div
+                        x-data="range()"
+                        x-init="mintrigger(); maxtrigger()"
+                        class="relative max-w-xl w-full"
+                      >
+                        <div>
+                          <input
+                            type="range"
+                            step="100"
+                            x-bind:min="min"
+                            x-bind:max="max"
+                            x-on:input="mintrigger"
+                            x-model="minprice"
+                            class="absolute pointer-events-none appearance-none z-20 h-2 w-full opacity-0 cursor-pointer"
+                          />
+
+                          <input
+                            type="range"
+                            step="100"
+                            x-bind:min="min"
+                            x-bind:max="max"
+                            x-on:input="maxtrigger"
+                            x-model="maxprice"
+                            class="absolute pointer-events-none appearance-none z-20 h-2 w-full opacity-0 cursor-pointer"
+                          />
+
+                          <div class="relative z-10 h-2">
+                            <div
+                              class="absolute z-10 left-0 right-0 bottom-0 top-0 rounded-md bg-[#D9D9D9]"
+                            ></div>
+
+                            <div
+                              class="absolute z-20 top-0 bottom-0 rounded-md bg-[#F3A94D]"
+                              x-bind:style="'right:'+maxthumb+'%; left:'+minthumb+'%'"
+                            ></div>
+
+                            <div
+                              class="absolute z-30 w-6 h-6 top-0 left-0 bg-white border-2 border-[#F3A94D] rounded-full -mt-2 -ml-1"
+                              x-bind:style="'left: '+minthumb+'%'"
+                            ></div>
+
+                            <div
+                              class="absolute z-30 w-6 h-6 top-0 right-0 bg-white border-2 border-[#F3A94D] rounded-full -mt-2 -mr-3"
+                              x-bind:style="'right: '+maxthumb+'%'"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <p class="mt-3">4,000KM - 50,000KM</p>
+                  </div>
+
+                  <hr class="mb-[20px]" />
+
+                  <div class="form-group">
+                    <label for="">車身類型</label>
+                    <div
+                      class="flex mt-[10px] justify-between items-center px-[25px] py-[10px] border bg-[#FCFBFB] rounded-[5px]"
+                    >
+                      <select
+                        class="bg-transparen w-full outline-0 shadown-none"
+                        name=""
+                        id=""
+                      >
+                        <option value="SUV">SUV</option>
+                        <option value="SUV">SUV</option>
+                        <option value="SUV">SUV</option>
+                      </select>
+                    </div>
+                  </div>
+                  <hr class="my-[20px]" />
+                  <div class="form-group">
+                    <label for="">品牌</label>
+                    <div
+                      class="flex mt-[10px] justify-between items-center px-[25px] py-[10px] border bg-[#FCFBFB] rounded-[5px]"
+                    >
+                      <select
+                        class="bg-transparen w-full outline-0 shadown-none"
+                        name=""
+                        id=""
+                      >
+                        <option value="Mitsubishi">Mitsubishi</option>
+                        <option value="Mitsubishi">Mitsubishi</option>
+                        <option value="Mitsubishi">Mitsubishi</option>
+                      </select>
+                    </div>
+                  </div>
+                  <hr class="my-[20px]" />
+                  <div class="form-group">
+                    <label for="">座位數目</label>
+                    <div
+                      class="flex mt-[10px] justify-between items-center px-[25px] py-[10px] border bg-[#FCFBFB] rounded-[5px]"
+                    >
+                      <select
+                        class="bg-transparen w-full outline-0 shadown-none"
+                        name=""
+                        id=""
+                      >
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      </select>
+                    </div>
+                  </div>
+                  <hr class="my-[20px]" />
+                  <div class="form-group mb-[25px]">
+                    <label for="">車身顏色</label>
+                    <div
+                      class="flex mt-[10px] justify-between items-center px-[25px] py-[10px] border bg-[#FCFBFB] rounded-[5px]"
+                    >
+                      <select
+                        class="bg-transparen w-full outline-0 shadown-none"
+                        name=""
+                        id=""
+                      >
+                      <option value="Gray">Gray</option>
+                      <option value="Gray">Gray</option>
+                      <option value="Gray">Gray</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <button class="bg-[#F3A94D] w-full p-[15px] text-white text-lg font-[500] rounded-[8px]">
+                    篩選
+                  </button>
+                  <button class="bg-[#fff] border-2 mt-[15px] border-[#F3A94D] w-full p-[15px] text-[#F3A94D] text-lg font-[500] rounded-[8px]">
+                    篩選
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="lists md:w-[75%] w-full">
+              <div
+                class="grid md:grid-cols-2 grid-cols-1 gap-[22px] bg-white rounded-[20px] overflow-hidden"
+              >
+                <div class="product-card bg-white rounded-[10px] p-[20px]">
+                  <div class="relative">
+                    <img src="img/car1.png" class="w-full" alt="" />
+                    <div
+                      class="heart bg-[#F3A94D] absolute w-[42px] h-[42px] inline-flex justify-center items-center text-white rounded-full border-2 border-white"
+                    >
+                      <i class="fa fa-heart"></i>
+                    </div>
+                  </div>
+
+                  <div class="md:pt-[16px] pt-[25px]">
+                    <p class="text-xl font-bold text-[#1E1B2C] mb-[25px]">
+                      Lexus LS500 Premium V2
+                    </p>
+                  </div>
+
+                  <hr class="mb-[15px]" />
+
+                  <div class="flex justify-between items-center">
+                    <div
+                      class="item w-full flex gap-[6px] justify-start items-center"
+                    >
+                      <img src="img/flag.svg" alt="" />
+                      2手
+                    </div>
+                    <div
+                      class="item w-full flex gap-[6px] justify-center items-center"
+                    >
+                      <img src="img/calendar.svg" alt="" />
+                      2021
+                    </div>
+                    <div
+                      class="item w-full flex gap-[6px] justify-end items-center"
+                    >
+                      <img src="img/calendar.svg" alt="" />
+                      2021
+                    </div>
+                  </div>
+
+                  <div
+                    class="pricing bg-[#F5F5F7] rounded-[5px] px-[18px] py-[15px] mt-[22px] flex justify-between items-center"
+                  >
+                    <span class="text-sm text-[#161616] font-[500]">
+                      HK$4,590/月
+                    </span>
+                    <span class="text-[24px] font-[800] text-[#D13333]">
+                      HK$758,000
+                    </span>
+                  </div>
+                </div>
+                <div class="product-card bg-white rounded-[10px] p-[20px]">
+                  <div class="relative">
+                    <img src="img/car2.png" class="w-full" alt="" />
+                    <div
+                      class="heart bg-[#F3A94D] absolute w-[42px] h-[42px] inline-flex justify-center items-center text-white rounded-full border-2 border-white"
+                    >
+                      <i class="fa fa-heart"></i>
+                    </div>
+                  </div>
+
+                  <div class="md:pt-[16px] pt-[25px]">
+                    <p class="text-xl font-bold text-[#1E1B2C] mb-[25px]">
+                      Lexus LS500 Premium V2
+                    </p>
+                  </div>
+
+                  <hr class="mb-[15px]" />
+
+                  <div class="flex justify-between items-center">
+                    <div
+                      class="item w-full flex gap-[6px] justify-start items-center"
+                    >
+                      <img src="img/flag.svg" alt="" />
+                      2手
+                    </div>
+                    <div
+                      class="item w-full flex gap-[6px] justify-center items-center"
+                    >
+                      <img src="img/calendar.svg" alt="" />
+                      2021
+                    </div>
+                    <div
+                      class="item w-full flex gap-[6px] justify-end items-center"
+                    >
+                      <img src="img/calendar.svg" alt="" />
+                      2021
+                    </div>
+                  </div>
+
+                  <div
+                    class="pricing bg-[#F5F5F7] rounded-[5px] px-[18px] py-[15px] mt-[22px] flex justify-between items-center"
+                  >
+                    <span class="text-sm text-[#161616] font-[500]">
+                      HK$4,590/月
+                    </span>
+                    <span class="text-[24px] font-[800] text-[#D13333]">
+                      HK$758,000
+                    </span>
+                  </div>
+                </div>
+                <div class="product-card bg-white rounded-[10px] p-[20px]">
+                  <div class="relative">
+                    <img src="img/car3.png" class="w-full" alt="" />
+                    <div
+                      class="heart bg-[#F3A94D] absolute w-[42px] h-[42px] inline-flex justify-center items-center text-white rounded-full border-2 border-white"
+                    >
+                      <i class="fa fa-heart"></i>
+                    </div>
+                  </div>
+
+                  <div class="md:pt-[16px] pt-[25px]">
+                    <p class="text-xl font-bold text-[#1E1B2C] mb-[25px]">
+                      Lexus LS500 Premium V2
+                    </p>
+                  </div>
+
+                  <hr class="mb-[15px]" />
+
+                  <div class="flex justify-between items-center">
+                    <div
+                      class="item w-full flex gap-[6px] justify-start items-center"
+                    >
+                      <img src="img/flag.svg" alt="" />
+                      2手
+                    </div>
+                    <div
+                      class="item w-full flex gap-[6px] justify-center items-center"
+                    >
+                      <img src="img/calendar.svg" alt="" />
+                      2021
+                    </div>
+                    <div
+                      class="item w-full flex gap-[6px] justify-end items-center"
+                    >
+                      <img src="img/calendar.svg" alt="" />
+                      2021
+                    </div>
+                  </div>
+
+                  <div
+                    class="pricing bg-[#F5F5F7] rounded-[5px] px-[18px] py-[15px] mt-[22px] flex justify-between items-center"
+                  >
+                    <span class="text-sm text-[#161616] font-[500]">
+                      HK$4,590/月
+                    </span>
+                    <span class="text-[24px] font-[800] text-[#D13333]">
+                      HK$758,000
+                    </span>
+                  </div>
+                </div>
+                <div class="product-card bg-white rounded-[10px] p-[20px]">
+                  <div class="relative">
+                    <img src="img/car4.png" class="w-full" alt="" />
+                    <div
+                      class="heart bg-[#F3A94D] absolute w-[42px] h-[42px] inline-flex justify-center items-center text-white rounded-full border-2 border-white"
+                    >
+                      <i class="fa fa-heart"></i>
+                    </div>
+                  </div>
+
+                  <div class="md:pt-[16px] pt-[25px]">
+                    <p class="text-xl font-bold text-[#1E1B2C] mb-[25px]">
+                      Lexus LS500 Premium V2
+                    </p>
+                  </div>
+
+                  <hr class="mb-[15px]" />
+
+                  <div class="flex justify-between items-center">
+                    <div
+                      class="item w-full flex gap-[6px] justify-start items-center"
+                    >
+                      <img src="img/flag.svg" alt="" />
+                      2手
+                    </div>
+                    <div
+                      class="item w-full flex gap-[6px] justify-center items-center"
+                    >
+                      <img src="img/calendar.svg" alt="" />
+                      2021
+                    </div>
+                    <div
+                      class="item w-full flex gap-[6px] justify-end items-center"
+                    >
+                      <img src="img/calendar.svg" alt="" />
+                      2021
+                    </div>
+                  </div>
+
+                  <div
+                    class="pricing bg-[#F5F5F7] rounded-[5px] px-[18px] py-[15px] mt-[22px] flex justify-between items-center"
+                  >
+                    <span class="text-sm text-[#161616] font-[500]">
+                      HK$4,590/月
+                    </span>
+                    <span class="text-[24px] font-[800] text-[#D13333]">
+                      HK$758,000
+                    </span>
+                  </div>
+                </div>
+                <div class="product-card bg-white rounded-[10px] p-[20px]">
+                  <div class="relative">
+                    <img src="img/car5.png" class="w-full" alt="" />
+                    <div
+                      class="heart bg-[#F3A94D] absolute w-[42px] h-[42px] inline-flex justify-center items-center text-white rounded-full border-2 border-white"
+                    >
+                      <i class="fa fa-heart"></i>
+                    </div>
+                  </div>
+
+                  <div class="md:pt-[16px] pt-[25px]">
+                    <p class="text-xl font-bold text-[#1E1B2C] mb-[25px]">
+                      Lexus LS500 Premium V2
+                    </p>
+                  </div>
+
+                  <hr class="mb-[15px]" />
+
+                  <div class="flex justify-between items-center">
+                    <div
+                      class="item w-full flex gap-[6px] justify-start items-center"
+                    >
+                      <img src="img/flag.svg" alt="" />
+                      2手
+                    </div>
+                    <div
+                      class="item w-full flex gap-[6px] justify-center items-center"
+                    >
+                      <img src="img/calendar.svg" alt="" />
+                      2021
+                    </div>
+                    <div
+                      class="item w-full flex gap-[6px] justify-end items-center"
+                    >
+                      <img src="img/calendar.svg" alt="" />
+                      2021
+                    </div>
+                  </div>
+
+                  <div
+                    class="pricing bg-[#F5F5F7] rounded-[5px] px-[18px] py-[15px] mt-[22px] flex justify-between items-center"
+                  >
+                    <span class="text-sm text-[#161616] font-[500]">
+                      HK$4,590/月
+                    </span>
+                    <span class="text-[24px] font-[800] text-[#D13333]">
+                      HK$758,000
+                    </span>
+                  </div>
+                </div>
+                <div class="product-card bg-white rounded-[10px] p-[20px]">
+                  <div class="relative">
+                    <img src="img/car2.png" class="w-full" alt="" />
+                    <div
+                      class="heart bg-[#F3A94D] absolute w-[42px] h-[42px] inline-flex justify-center items-center text-white rounded-full border-2 border-white"
+                    >
+                      <i class="fa fa-heart"></i>
+                    </div>
+                  </div>
+
+                  <div class="md:pt-[16px] pt-[25px]">
+                    <p class="text-xl font-bold text-[#1E1B2C] mb-[25px]">
+                      Lexus LS500 Premium V2
+                    </p>
+                  </div>
+
+                  <hr class="mb-[15px]" />
+
+                  <div class="flex justify-between items-center">
+                    <div
+                      class="item w-full flex gap-[6px] justify-start items-center"
+                    >
+                      <img src="img/flag.svg" alt="" />
+                      2手
+                    </div>
+                    <div
+                      class="item w-full flex gap-[6px] justify-center items-center"
+                    >
+                      <img src="img/calendar.svg" alt="" />
+                      2021
+                    </div>
+                    <div
+                      class="item w-full flex gap-[6px] justify-end items-center"
+                    >
+                      <img src="img/calendar.svg" alt="" />
+                      2021
+                    </div>
+                  </div>
+
+                  <div
+                    class="pricing bg-[#F5F5F7] rounded-[5px] px-[18px] py-[15px] mt-[22px] flex justify-between items-center"
+                  >
+                    <span class="text-sm text-[#161616] font-[500]">
+                      HK$4,590/月
+                    </span>
+                    <span class="text-[24px] font-[800] text-[#D13333]">
+                      HK$758,000
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- listing -->
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-[#161616] pt-[50px] pb-[20px]">
+      <div class="container">
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-40px">
+          <div class="item">
+            <a href="">
+              <img src="img/coreharry.svg" class="mb-[35px] mt-[5px]" alt="" />
+            </a>
+            <a
+              href=""
+              class="flex items-center text-white mb-[10px] gap-[10px]"
+            >
+              <i class="fa fa-envelope text-[#F3A94D]"></i>
+              <span>carhero@gmail.com</span>
+            </a>
+            <a
+              href=""
+              class="flex items-center text-white mb-[10px] gap-[10px]"
+            >
+              <i class="fa fa-envelope text-[#F3A94D]"></i>
+              <span> (+852) 2324 3242 </span>
+            </a>
+          </div>
+
+          <div class="item">
+            <p class="text-2xl font-bold text-white mb-[25px]">Quick Links</p>
+            <ul>
+              <li class="mb-3">
+                <a href="" class="text-white ferid-reserve mavesound">
+                  車盤列表
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li class="mb-3">
+                <a href="" class="text-white ferid-reserve"> 刊登車盤 </a>
+              </li>
+            </ul>
+            <ul class="mb-3">
+              <li>
+                <a href="" class="text-white ferid-reserve"> 我的帳戶 </a>
+              </li>
+            </ul>
+          </div>
+          <div class="item">
+            <p class="text-2xl font-bold text-white mb-[25px]">關於我們</p>
+            <ul>
+              <li class="mb-3">
+                <a href="" class="text-white ferid-reserve mavesound">
+                  車盤列表
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li class="mb-3">
+                <a href="" class="text-white ferid-reserve"> 刊登車盤 </a>
+              </li>
+            </ul>
+            <ul class="mb-3">
+              <li>
+                <a href="" class="text-white ferid-reserve"> 我的帳戶 </a>
+              </li>
+            </ul>
+          </div>
+          <div class="item">
+            <p class="text-2xl font-bold text-white mb-[25px]">搜索網站</p>
+
+            <form
+              action=""
+              class="mb-3 bg-white px-[20px] py-[12px] rounded-[5px] flex justify-between items-center"
+            >
+              <input
+                type="text"
+                placeholder="Search here..."
+                class="w-full"
+                name=""
+                id=""
+              />
+              <i class="fa fa-search text-[#F3A94D]"></i>
+            </form>
+
+            <div class="flex social mt-8 justify-start items-center gap-[14px]">
+              <a
+                href=""
+                class="icon inline-flex w-[50px] h-[50px] justify-center items-center bg-[#F3A94D] rounded-[5px]"
+              >
+                <i class="fab fa-facebook-f text-white text-2xl"></i>
+              </a>
+              <a
+                href=""
+                class="icon inline-flex w-[50px] h-[50px] justify-center items-center bg-[#F3A94D] rounded-[5px]"
+              >
+                <i class="fab fa-instagram text-white text-2xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="mt-[150px]" />
+
+        <div class="flex sm-text mt-3 justify-between items-center">
+          <div class="flex justify-start items-center gap-[10px]">
+            <a href="" class="text-white"> English </a>
+            <a href="" class="text-white"> | </a>
+            <a href="" class="text-white"> Chinese </a>
+          </div>
+          <p class="text-white">© 2022 CarHero All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- alpine -->
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+
+    <!-- app js -->
+    <script src="js/app.js"></script>
+
+    <script>
+      function range() {
+        return {
+          minprice: 1000,
+          maxprice: 7000,
+          min: 100,
+          max: 10000,
+          minthumb: 0,
+          maxthumb: 0,
+
+          mintrigger() {
+            this.minprice = Math.min(this.minprice, this.maxprice - 500);
+            this.minthumb =
+              ((this.minprice - this.min) / (this.max - this.min)) * 100;
+          },
+
+          maxtrigger() {
+            this.maxprice = Math.max(this.maxprice, this.minprice + 500);
+            this.maxthumb =
+              100 - ((this.maxprice - this.min) / (this.max - this.min)) * 100;
+          },
+        };
+      }
+
+      const filterBtn = document.getElementById("filterBtn");
+      const filterCard = document.getElementById("filterCard");
+
+        filterBtn.addEventListener("click", () => {
+            filterCard.classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>
