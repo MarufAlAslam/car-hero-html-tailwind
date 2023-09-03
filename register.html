@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarHero</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <header class="shadow-md">
+      <div class="navbar py-[20px]">
+        <div class="container">
+          <div class="flex justify-between items-center">
+            <div class="burger md:hidden block">
+              <button class="menu-toggler" id="toggler">
+                <i class="fa fa-bars text-2xl"></i>
+              </button>
+            </div>
+            <div class="left flex justify-start items-center gap-[48px]">
+              <a href="">
+                <img src="img/logo.png" class="logo" alt="" />
+              </a>
+              <div class="menu-bg" id="menu-bg"></div>
+              <div
+                id="menu"
+                class="menu flex justify-start items-center gap-[40px]"
+              >
+                <a href="" class="text-black"> 首頁 </a>
+                <a href="" class="text-black"> 車盤列表 </a>
+                <a href="" class="text-black"> 車盤列表 </a>
+                <a href="" class="text-black"> 出售 </a>
+                <a href="" class="text-black"> 購買 </a>
+                <a href="" class="text-black"> 使用者中心 </a>
+              </div>
+            </div>
+
+            <div class="right flex justify-end items-center gap-[40px]">
+              <a
+                href=""
+                class="md:flex hidden justify-center items-center gap-[10px] text-[#F3A94D]"
+              >
+                <img src="img/lock.svg" alt="" />
+                註冊
+              </a>
+
+              <a
+                href=""
+                class="bg-[#F3A94D] text-white rounded-[5px] px-[45px] py-[15px] md:flex hidden gap-[10px] justify-center items-center"
+              >
+                <img src="img/user.svg" alt="" />
+                登入
+              </a>
+
+              <button class="btn bg-transparent p-0 md:hidden block">
+                <i class="fa fa-search text-2xl"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- navbar -->
+
+    <div class="md:py-[80px] py-[60px] md:bg-[#f7f7f7] bg-white">
+      <div class="container">
+        <div
+          class="flex justify-between items-start bg-white overflow-hidden rounded-r-[15px]"
+        >
+          <div class="lg:w-[65%] md:w-1/2 md:block hidden">
+            <img src="img/register-img.png" class="w-full" alt="" />
+          </div>
+          <div class="lg:w-[35%] md:w-1/2 w-full md:py-[35px] md:px-[40px]">
+            <h2 class="text-[30px] font-bold">會員登記</h2>
+            <p class="pt-[20px] pb-[35px] text-[#656060]">
+              已經是會員？按此處登入
+            </p>
+
+            <form action="">
+              <div class="form-group">
+                <label
+                  for=""
+                  class="text-sm text-[#656060] font-bold block mb-[8px]"
+                >
+                  全名
+                </label>
+
+                <div class="flex justify-between items-center gap-[10px]">
+                  <input
+                    type="text"
+                    class="border px-3 py-2 border-[#BCBCBC] rounded-[5px] w-full"
+                    name=""
+                    id=""
+                  />
+                </div>
+              </div>
+              <div class="form-group mt-[20px]">
+                <label
+                  for=""
+                  class="text-sm text-[#656060] font-bold block mb-[8px]"
+                >
+                手提電話
+                </label>
+
+                <div class="flex justify-between items-center gap-[10px]">
+                  <div
+                    class="phone-code flex justify-between items-center border px-3 py-2 border-[#BCBCBC] rounded-[5px] w-[110px]"
+                    id="phone-code"
+                  >
+                    <!-- <img src="" id="flag" alt="" /> -->
+                    <select
+                      name=""
+                      class="outline-0 shadow-none"
+                      id="code-selector"
+                    ></select>
+                  </div>
+                  <input
+                    type="text"
+                    class="border px-3 py-2 border-[#BCBCBC] rounded-[5px] w-full"
+                    name=""
+                    id=""
+                  />
+                </div>
+              </div>
+              <div class="form-group mt-[20px]">
+                <label
+                  for=""
+                  class="text-sm text-[#656060] font-bold block mb-[8px]"
+                >
+                驗證碼
+                </label>
+
+                <div class="flex justify-between items-center gap-[10px]">
+                  <input
+                    type="text"
+                    class="border px-3 py-2 border-[#BCBCBC] rounded-[5px] w-full"
+                    name=""
+                    id=""
+                  />
+                </div>
+              </div>
+              <div class="form-group mt-[20px]">
+                <div class="flex justify-start items-center gap-[15px]">
+                  <input
+                    type="checkbox"
+                    class="border w-[20px] h-[20px]"
+                    name=""
+                    id="rem"
+                  />
+                  <label for="rem" class="text-[#656060] text-sm"
+                    >保持登錄狀態</label
+                  >
+                </div>
+              </div>
+
+              <button
+                class="bt mt-[20px] p-[12px] rounded-[5px] w-full bg-[#bdbdbd] text-white font-bold"
+              >
+                按此再發送認證號碼 (30s)
+              </button>
+              <button
+                class="bt mt-[80px] p-[12px] rounded-[5px] w-full bg-[#F3A94D] text-white font-bold"
+              >
+              登入
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-[#161616] pt-[50px] pb-[20px]">
+      <div class="container">
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-40px">
+          <div class="item">
+            <a href="">
+              <img src="img/coreharry.svg" class="mb-[35px] mt-[5px]" alt="" />
+            </a>
+            <a
+              href=""
+              class="flex items-center text-white mb-[10px] gap-[10px]"
+            >
+              <i class="fa fa-envelope text-[#F3A94D]"></i>
+              <span>carhero@gmail.com</span>
+            </a>
+            <a
+              href=""
+              class="flex items-center text-white mb-[10px] gap-[10px]"
+            >
+              <i class="fa fa-envelope text-[#F3A94D]"></i>
+              <span> (+852) 2324 3242 </span>
+            </a>
+          </div>
+
+          <div class="item">
+            <p class="text-2xl font-bold text-white mb-[25px]">Quick Links</p>
+            <ul>
+              <li class="mb-3">
+                <a href="" class="text-white ferid-reserve mavesound">
+                  車盤列表
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li class="mb-3">
+                <a href="" class="text-white ferid-reserve"> 刊登車盤 </a>
+              </li>
+            </ul>
+            <ul class="mb-3">
+              <li>
+                <a href="" class="text-white ferid-reserve"> 我的帳戶 </a>
+              </li>
+            </ul>
+          </div>
+          <div class="item">
+            <p class="text-2xl font-bold text-white mb-[25px]">關於我們</p>
+            <ul>
+              <li class="mb-3">
+                <a href="" class="text-white ferid-reserve mavesound">
+                  車盤列表
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li class="mb-3">
+                <a href="" class="text-white ferid-reserve"> 刊登車盤 </a>
+              </li>
+            </ul>
+            <ul class="mb-3">
+              <li>
+                <a href="" class="text-white ferid-reserve"> 我的帳戶 </a>
+              </li>
+            </ul>
+          </div>
+          <div class="item">
+            <p class="text-2xl font-bold text-white mb-[25px]">搜索網站</p>
+
+            <form
+              action=""
+              class="mb-3 bg-white px-[20px] py-[12px] rounded-[5px] flex justify-between items-center"
+            >
+              <input
+                type="text"
+                placeholder="Search here..."
+                class="w-full"
+                name=""
+                id=""
+              />
+              <i class="fa fa-search text-[#F3A94D]"></i>
+            </form>
+
+            <div class="flex social mt-8 justify-start items-center gap-[14px]">
+              <a
+                href=""
+                class="icon inline-flex w-[50px] h-[50px] justify-center items-center bg-[#F3A94D] rounded-[5px]"
+              >
+                <i class="fab fa-facebook-f text-white text-2xl"></i>
+              </a>
+              <a
+                href=""
+                class="icon inline-flex w-[50px] h-[50px] justify-center items-center bg-[#F3A94D] rounded-[5px]"
+              >
+                <i class="fab fa-instagram text-white text-2xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="mt-[150px]" />
+
+        <div class="flex sm-text mt-3 justify-between items-center">
+          <div class="flex justify-start items-center gap-[10px]">
+            <a href="" class="text-white"> English </a>
+            <a href="" class="text-white"> | </a>
+            <a href="" class="text-white"> Chinese </a>
+          </div>
+          <p class="text-white">© 2022 CarHero All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- app js -->
+    <script src="js/app.js"></script>
+
+    <!-- flags js -->
+    <script src="js/flags.js"></script>
+  </body>
+</html>
