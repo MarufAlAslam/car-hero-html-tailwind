@@ -656,37 +656,5 @@
 
     <!-- app js -->
     <script src="js/app.js"></script>
-
-    <script>
-      function range() {
-        return {
-          minprice: 1000,
-          maxprice: 7000,
-          min: 100,
-          max: 10000,
-          minthumb: 0,
-          maxthumb: 0,
-
-          mintrigger() {
-            this.minprice = Math.min(this.minprice, this.maxprice - 500);
-            this.minthumb =
-              ((this.minprice - this.min) / (this.max - this.min)) * 100;
-          },
-
-          maxtrigger() {
-            this.maxprice = Math.max(this.maxprice, this.minprice + 500);
-            this.maxthumb =
-              100 - ((this.maxprice - this.min) / (this.max - this.min)) * 100;
-          },
-        };
-      }
-
-      const filterBtn = document.getElementById("filterBtn");
-      const filterCard = document.getElementById("filterCard");
-
-        filterBtn.addEventListener("click", () => {
-            filterCard.classList.toggle("hidden");
-        });
-    </script>
   </body>
 </html>

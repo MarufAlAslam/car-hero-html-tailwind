@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarHero</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <header class="shadow-md">
+        <div class="navbar py-[20px]">
+            <div class="container">
+              <div class="flex justify-between items-center">
+                <div class="burger md:hidden block">
+                  <button class="menu-toggler" id="toggler">
+                    <i class="fa fa-bars text-2xl"></i>
+                  </button>
+                </div>
+                <div class="left flex justify-start items-center gap-[48px]">
+                  <a href="">
+                    <img src="img/logo.png" class="logo" alt="" />
+                  </a>
+                  <div class="menu-bg" id="menu-bg"></div>
+                  <div
+                    id="menu"
+                    class="menu flex justify-start items-center gap-[40px]"
+                  >
+                    <a href="" class="text-black"> 首頁 </a>
+                    <a href="" class="text-black"> 車盤列表 </a>
+                    <a href="" class="text-black"> 車盤列表 </a>
+                    <a href="" class="text-black"> 出售 </a>
+                    <a href="" class="text-black"> 購買 </a>
+                    <a href="" class="text-black"> 使用者中心 </a>
+                  </div>
+                </div>
+      
+                <div class="right flex justify-end items-center gap-[40px]">
+                  <div class="group inline-block relative">
+                      <button
+                        class="bg-gray-300 rounded-[50px] text-gray-700 font-semibold py-2 pl-[15px] rounded inline-flex gap-[14px] items-center border bg-white py-[3px] pr-[3px]"
+                      >
+                        <i class="fa fa-bars"></i>
+                        <img src="img/avatar.png" alt="">
+                        </svg>
+                      </button>
+                      <ul class="absolute hidden text-gray-700 pt-1 group-hover:block dropdown-items">
+                        <li class="">
+                          <a
+                            class="rounded-t hover:bg-[#ECECEC] py-2 px-4 block whitespace-no-wrap"
+                            href="#"
+                            >我的收藏</a
+                          >
+                        </li>
+                        <li class="">
+                          <a
+                            class="rounded-t hover:bg-[#ECECEC] py-2 px-4 block whitespace-no-wrap"
+                            href="#"
+                            >瀏覽歷史</a
+                          >
+                        </li>
+                        <li class="">
+                          <a
+                            class=" hover:bg-[#ECECEC] py-2 px-4 block whitespace-no-wrap"
+                            href="#"
+                            >出售清單</a
+                          >
+                        </li>
+                        <li>
+                          <hr>
+                        </li>
+                        <li class="">
+                          <a
+                            class="rounded-b hover:bg-[#ECECEC] py-2 px-4 block whitespace-no-wrap"
+                            href="#"
+                            >出售清單</a
+                          >
+                        </li>
+                        <li>
+                          <hr>
+                        </li>
+                        <li class="">
+                          <a
+                            class="rounded-b hover:bg-[#ECECEC] py-2 px-4 block whitespace-no-wrap"
+                            href="#"
+                            >我的帳戶</a
+                          >
+                        </li>
+                        <li>
+                          <hr>
+                        </li>
+                        <li class="">
+                          <a
+                            class="rounded-b hover:bg-[#ECECEC] py-2 px-4 block whitespace-no-wrap"
+                            href="#"
+                            >常見問題</a
+                          >
+                        </li>
+                        <li class="">
+                          <a
+                            class="rounded-b hover:bg-[#ECECEC] py-2 px-4 block whitespace-no-wrap"
+                            href="#"
+                            >登出</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </header>
+    <!-- navbar -->
+
+    <!-- history -->
+    <section class="history pt-[60px] pb-[120px]">
+        <div class="container">
+            <div class="lg:w-9/12 mx-auto">
+                <h2 class="text-[32px] font-bold">
+                    瀏覽歷史
+                </h2>
+
+                <div class="mt-[32px] border-t border-b py-[20px] flex justify-between items-center md:px-5">
+                    <div class="flex justify-start items-center md:gap-[25px] gap-[15px]">
+                        <img src="img/car-dp.png" alt="">
+                        <div class="">
+                            <p class="text-[#3281F7]">
+                                Lexus LS500 Premium V2
+                            </p>
+                            <p class="text-[#000]">
+                                12/12/2023
+                            </p>
+                        </div>
+                    </div>
+
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <g clip-path="url(#clip0_30_54068)">
+                              <mask id="mask0_30_54068" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+                                <path d="M0 0H28V28H0V0Z" fill="white"/>
+                              </mask>
+                              <g mask="url(#mask0_30_54068)">
+                                <mask id="mask1_30_54068" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+                                  <path d="M0 0H28V28H0V0Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask1_30_54068)">
+                                  <path d="M23.6238 4.66792H14.875V3.20979C14.875 2.73155 14.4785 2.33496 14.0002 2.33496C13.522 2.33496 13.1253 2.73155 13.1253 3.20979V4.66792H4.37678C3.89854 4.66792 3.50195 5.06451 3.50195 5.54275C3.50195 6.02099 3.89854 6.41764 4.37678 6.41764H5.05338L6.8381 22.8067C7.01304 24.4397 8.38952 25.6646 10.0226 25.6646H17.978C19.6227 25.6646 20.9875 24.4397 21.1624 22.8067L22.9472 6.41764H23.6237C24.1019 6.41764 24.4986 6.02105 24.4986 5.54275C24.4986 5.06451 24.102 4.66792 23.6237 4.66792H23.6238ZM19.4243 22.6201C19.3427 23.355 18.7244 23.9148 17.9779 23.9148H10.0225C9.27594 23.9148 8.65776 23.355 8.57606 22.6201L7.31628 11.0835H20.6842L19.4243 22.6201ZM20.8708 9.33384H7.12969L6.81475 6.41764H21.1974L20.8709 9.33384H20.8708Z" fill="#676767"/>
+                                  <path d="M16.0298 14.0231C15.5516 14.0231 15.155 14.4197 15.155 14.8979V20.1471C15.155 20.6253 15.5516 21.022 16.0298 21.022C16.5081 21.022 16.9047 20.6253 16.9047 20.1471V14.8979C16.9047 14.4197 16.5198 14.0231 16.0298 14.0231ZM11.9589 13.9998C11.4806 13.9998 11.084 14.3963 11.084 14.8746V20.1237C11.084 20.602 11.4806 20.9986 11.9588 20.9986C12.4371 20.9986 12.8337 20.602 12.8337 20.1237V14.8746C12.8337 14.3963 12.4371 13.9998 11.9588 13.9998H11.9589Z" fill="#676767"/>
+                                </g>
+                              </g>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_30_54068">
+                                <rect width="28" height="28" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                    </button>
+                </div>
+                <div class="border-b py-[20px] flex justify-between items-center md:px-5">
+                    <div class="flex justify-start items-center md:gap-[25px] gap-[15px]">
+                        <img src="img/car-dp.png" alt="">
+                        <div class="">
+                            <p class="text-[#3281F7]">
+                                Lexus LS500 Premium V2
+                            </p>
+                            <p class="text-[#000]">
+                                12/12/2023
+                            </p>
+                        </div>
+                    </div>
+
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <g clip-path="url(#clip0_30_54068)">
+                              <mask id="mask0_30_54068" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+                                <path d="M0 0H28V28H0V0Z" fill="white"/>
+                              </mask>
+                              <g mask="url(#mask0_30_54068)">
+                                <mask id="mask1_30_54068" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+                                  <path d="M0 0H28V28H0V0Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask1_30_54068)">
+                                  <path d="M23.6238 4.66792H14.875V3.20979C14.875 2.73155 14.4785 2.33496 14.0002 2.33496C13.522 2.33496 13.1253 2.73155 13.1253 3.20979V4.66792H4.37678C3.89854 4.66792 3.50195 5.06451 3.50195 5.54275C3.50195 6.02099 3.89854 6.41764 4.37678 6.41764H5.05338L6.8381 22.8067C7.01304 24.4397 8.38952 25.6646 10.0226 25.6646H17.978C19.6227 25.6646 20.9875 24.4397 21.1624 22.8067L22.9472 6.41764H23.6237C24.1019 6.41764 24.4986 6.02105 24.4986 5.54275C24.4986 5.06451 24.102 4.66792 23.6237 4.66792H23.6238ZM19.4243 22.6201C19.3427 23.355 18.7244 23.9148 17.9779 23.9148H10.0225C9.27594 23.9148 8.65776 23.355 8.57606 22.6201L7.31628 11.0835H20.6842L19.4243 22.6201ZM20.8708 9.33384H7.12969L6.81475 6.41764H21.1974L20.8709 9.33384H20.8708Z" fill="#676767"/>
+                                  <path d="M16.0298 14.0231C15.5516 14.0231 15.155 14.4197 15.155 14.8979V20.1471C15.155 20.6253 15.5516 21.022 16.0298 21.022C16.5081 21.022 16.9047 20.6253 16.9047 20.1471V14.8979C16.9047 14.4197 16.5198 14.0231 16.0298 14.0231ZM11.9589 13.9998C11.4806 13.9998 11.084 14.3963 11.084 14.8746V20.1237C11.084 20.602 11.4806 20.9986 11.9588 20.9986C12.4371 20.9986 12.8337 20.602 12.8337 20.1237V14.8746C12.8337 14.3963 12.4371 13.9998 11.9588 13.9998H11.9589Z" fill="#676767"/>
+                                </g>
+                              </g>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_30_54068">
+                                <rect width="28" height="28" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                    </button>
+                </div>
+                <div class="border-b py-[20px] flex justify-between items-center md:px-5">
+                    <div class="flex justify-start items-center md:gap-[25px] gap-[15px]">
+                        <img src="img/car-dp.png" alt="">
+                        <div class="">
+                            <p class="text-[#3281F7]">
+                                Lexus LS500 Premium V2
+                            </p>
+                            <p class="text-[#000]">
+                                12/12/2023
+                            </p>
+                        </div>
+                    </div>
+
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <g clip-path="url(#clip0_30_54068)">
+                              <mask id="mask0_30_54068" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+                                <path d="M0 0H28V28H0V0Z" fill="white"/>
+                              </mask>
+                              <g mask="url(#mask0_30_54068)">
+                                <mask id="mask1_30_54068" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+                                  <path d="M0 0H28V28H0V0Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask1_30_54068)">
+                                  <path d="M23.6238 4.66792H14.875V3.20979C14.875 2.73155 14.4785 2.33496 14.0002 2.33496C13.522 2.33496 13.1253 2.73155 13.1253 3.20979V4.66792H4.37678C3.89854 4.66792 3.50195 5.06451 3.50195 5.54275C3.50195 6.02099 3.89854 6.41764 4.37678 6.41764H5.05338L6.8381 22.8067C7.01304 24.4397 8.38952 25.6646 10.0226 25.6646H17.978C19.6227 25.6646 20.9875 24.4397 21.1624 22.8067L22.9472 6.41764H23.6237C24.1019 6.41764 24.4986 6.02105 24.4986 5.54275C24.4986 5.06451 24.102 4.66792 23.6237 4.66792H23.6238ZM19.4243 22.6201C19.3427 23.355 18.7244 23.9148 17.9779 23.9148H10.0225C9.27594 23.9148 8.65776 23.355 8.57606 22.6201L7.31628 11.0835H20.6842L19.4243 22.6201ZM20.8708 9.33384H7.12969L6.81475 6.41764H21.1974L20.8709 9.33384H20.8708Z" fill="#676767"/>
+                                  <path d="M16.0298 14.0231C15.5516 14.0231 15.155 14.4197 15.155 14.8979V20.1471C15.155 20.6253 15.5516 21.022 16.0298 21.022C16.5081 21.022 16.9047 20.6253 16.9047 20.1471V14.8979C16.9047 14.4197 16.5198 14.0231 16.0298 14.0231ZM11.9589 13.9998C11.4806 13.9998 11.084 14.3963 11.084 14.8746V20.1237C11.084 20.602 11.4806 20.9986 11.9588 20.9986C12.4371 20.9986 12.8337 20.602 12.8337 20.1237V14.8746C12.8337 14.3963 12.4371 13.9998 11.9588 13.9998H11.9589Z" fill="#676767"/>
+                                </g>
+                              </g>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_30_54068">
+                                <rect width="28" height="28" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                    </button>
+                </div>
+                <div class="border-b py-[20px] flex justify-between items-center md:px-5">
+                    <div class="flex justify-start items-center md:gap-[25px] gap-[15px]">
+                        <img src="img/car-dp.png" alt="">
+                        <div class="">
+                            <p class="text-[#3281F7]">
+                                Lexus LS500 Premium V2
+                            </p>
+                            <p class="text-[#000]">
+                                12/12/2023
+                            </p>
+                        </div>
+                    </div>
+
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <g clip-path="url(#clip0_30_54068)">
+                              <mask id="mask0_30_54068" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+                                <path d="M0 0H28V28H0V0Z" fill="white"/>
+                              </mask>
+                              <g mask="url(#mask0_30_54068)">
+                                <mask id="mask1_30_54068" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+                                  <path d="M0 0H28V28H0V0Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask1_30_54068)">
+                                  <path d="M23.6238 4.66792H14.875V3.20979C14.875 2.73155 14.4785 2.33496 14.0002 2.33496C13.522 2.33496 13.1253 2.73155 13.1253 3.20979V4.66792H4.37678C3.89854 4.66792 3.50195 5.06451 3.50195 5.54275C3.50195 6.02099 3.89854 6.41764 4.37678 6.41764H5.05338L6.8381 22.8067C7.01304 24.4397 8.38952 25.6646 10.0226 25.6646H17.978C19.6227 25.6646 20.9875 24.4397 21.1624 22.8067L22.9472 6.41764H23.6237C24.1019 6.41764 24.4986 6.02105 24.4986 5.54275C24.4986 5.06451 24.102 4.66792 23.6237 4.66792H23.6238ZM19.4243 22.6201C19.3427 23.355 18.7244 23.9148 17.9779 23.9148H10.0225C9.27594 23.9148 8.65776 23.355 8.57606 22.6201L7.31628 11.0835H20.6842L19.4243 22.6201ZM20.8708 9.33384H7.12969L6.81475 6.41764H21.1974L20.8709 9.33384H20.8708Z" fill="#676767"/>
+                                  <path d="M16.0298 14.0231C15.5516 14.0231 15.155 14.4197 15.155 14.8979V20.1471C15.155 20.6253 15.5516 21.022 16.0298 21.022C16.5081 21.022 16.9047 20.6253 16.9047 20.1471V14.8979C16.9047 14.4197 16.5198 14.0231 16.0298 14.0231ZM11.9589 13.9998C11.4806 13.9998 11.084 14.3963 11.084 14.8746V20.1237C11.084 20.602 11.4806 20.9986 11.9588 20.9986C12.4371 20.9986 12.8337 20.602 12.8337 20.1237V14.8746C12.8337 14.3963 12.4371 13.9998 11.9588 13.9998H11.9589Z" fill="#676767"/>
+                                </g>
+                              </g>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_30_54068">
+                                <rect width="28" height="28" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                    </button>
+                </div>
+                <div class="border-b py-[20px] flex justify-between items-center md:px-5">
+                    <div class="flex justify-start items-center md:gap-[25px] gap-[15px]">
+                        <img src="img/car-dp.png" alt="">
+                        <div class="">
+                            <p class="text-[#3281F7]">
+                                Lexus LS500 Premium V2
+                            </p>
+                            <p class="text-[#000]">
+                                12/12/2023
+                            </p>
+                        </div>
+                    </div>
+
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <g clip-path="url(#clip0_30_54068)">
+                              <mask id="mask0_30_54068" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+                                <path d="M0 0H28V28H0V0Z" fill="white"/>
+                              </mask>
+                              <g mask="url(#mask0_30_54068)">
+                                <mask id="mask1_30_54068" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+                                  <path d="M0 0H28V28H0V0Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask1_30_54068)">
+                                  <path d="M23.6238 4.66792H14.875V3.20979C14.875 2.73155 14.4785 2.33496 14.0002 2.33496C13.522 2.33496 13.1253 2.73155 13.1253 3.20979V4.66792H4.37678C3.89854 4.66792 3.50195 5.06451 3.50195 5.54275C3.50195 6.02099 3.89854 6.41764 4.37678 6.41764H5.05338L6.8381 22.8067C7.01304 24.4397 8.38952 25.6646 10.0226 25.6646H17.978C19.6227 25.6646 20.9875 24.4397 21.1624 22.8067L22.9472 6.41764H23.6237C24.1019 6.41764 24.4986 6.02105 24.4986 5.54275C24.4986 5.06451 24.102 4.66792 23.6237 4.66792H23.6238ZM19.4243 22.6201C19.3427 23.355 18.7244 23.9148 17.9779 23.9148H10.0225C9.27594 23.9148 8.65776 23.355 8.57606 22.6201L7.31628 11.0835H20.6842L19.4243 22.6201ZM20.8708 9.33384H7.12969L6.81475 6.41764H21.1974L20.8709 9.33384H20.8708Z" fill="#676767"/>
+                                  <path d="M16.0298 14.0231C15.5516 14.0231 15.155 14.4197 15.155 14.8979V20.1471C15.155 20.6253 15.5516 21.022 16.0298 21.022C16.5081 21.022 16.9047 20.6253 16.9047 20.1471V14.8979C16.9047 14.4197 16.5198 14.0231 16.0298 14.0231ZM11.9589 13.9998C11.4806 13.9998 11.084 14.3963 11.084 14.8746V20.1237C11.084 20.602 11.4806 20.9986 11.9588 20.9986C12.4371 20.9986 12.8337 20.602 12.8337 20.1237V14.8746C12.8337 14.3963 12.4371 13.9998 11.9588 13.9998H11.9589Z" fill="#676767"/>
+                                </g>
+                              </g>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_30_54068">
+                                <rect width="28" height="28" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                    </button>
+                </div>
+                <div class="border-b py-[20px] flex justify-between items-center md:px-5">
+                    <div class="flex justify-start items-center md:gap-[25px] gap-[15px]">
+                        <img src="img/car-dp.png" alt="">
+                        <div class="">
+                            <p class="text-[#3281F7]">
+                                Lexus LS500 Premium V2
+                            </p>
+                            <p class="text-[#000]">
+                                12/12/2023
+                            </p>
+                        </div>
+                    </div>
+
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <g clip-path="url(#clip0_30_54068)">
+                              <mask id="mask0_30_54068" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+                                <path d="M0 0H28V28H0V0Z" fill="white"/>
+                              </mask>
+                              <g mask="url(#mask0_30_54068)">
+                                <mask id="mask1_30_54068" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+                                  <path d="M0 0H28V28H0V0Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask1_30_54068)">
+                                  <path d="M23.6238 4.66792H14.875V3.20979C14.875 2.73155 14.4785 2.33496 14.0002 2.33496C13.522 2.33496 13.1253 2.73155 13.1253 3.20979V4.66792H4.37678C3.89854 4.66792 3.50195 5.06451 3.50195 5.54275C3.50195 6.02099 3.89854 6.41764 4.37678 6.41764H5.05338L6.8381 22.8067C7.01304 24.4397 8.38952 25.6646 10.0226 25.6646H17.978C19.6227 25.6646 20.9875 24.4397 21.1624 22.8067L22.9472 6.41764H23.6237C24.1019 6.41764 24.4986 6.02105 24.4986 5.54275C24.4986 5.06451 24.102 4.66792 23.6237 4.66792H23.6238ZM19.4243 22.6201C19.3427 23.355 18.7244 23.9148 17.9779 23.9148H10.0225C9.27594 23.9148 8.65776 23.355 8.57606 22.6201L7.31628 11.0835H20.6842L19.4243 22.6201ZM20.8708 9.33384H7.12969L6.81475 6.41764H21.1974L20.8709 9.33384H20.8708Z" fill="#676767"/>
+                                  <path d="M16.0298 14.0231C15.5516 14.0231 15.155 14.4197 15.155 14.8979V20.1471C15.155 20.6253 15.5516 21.022 16.0298 21.022C16.5081 21.022 16.9047 20.6253 16.9047 20.1471V14.8979C16.9047 14.4197 16.5198 14.0231 16.0298 14.0231ZM11.9589 13.9998C11.4806 13.9998 11.084 14.3963 11.084 14.8746V20.1237C11.084 20.602 11.4806 20.9986 11.9588 20.9986C12.4371 20.9986 12.8337 20.602 12.8337 20.1237V14.8746C12.8337 14.3963 12.4371 13.9998 11.9588 13.9998H11.9589Z" fill="#676767"/>
+                                </g>
+                              </g>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_30_54068">
+                                <rect width="28" height="28" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                    </button>
+                </div>
+                <div class="border-b py-[20px] flex justify-between items-center md:px-5">
+                    <div class="flex justify-start items-center md:gap-[25px] gap-[15px]">
+                        <img src="img/car-dp.png" alt="">
+                        <div class="">
+                            <p class="text-[#3281F7]">
+                                Lexus LS500 Premium V2
+                            </p>
+                            <p class="text-[#000]">
+                                12/12/2023
+                            </p>
+                        </div>
+                    </div>
+
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <g clip-path="url(#clip0_30_54068)">
+                              <mask id="mask0_30_54068" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+                                <path d="M0 0H28V28H0V0Z" fill="white"/>
+                              </mask>
+                              <g mask="url(#mask0_30_54068)">
+                                <mask id="mask1_30_54068" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+                                  <path d="M0 0H28V28H0V0Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask1_30_54068)">
+                                  <path d="M23.6238 4.66792H14.875V3.20979C14.875 2.73155 14.4785 2.33496 14.0002 2.33496C13.522 2.33496 13.1253 2.73155 13.1253 3.20979V4.66792H4.37678C3.89854 4.66792 3.50195 5.06451 3.50195 5.54275C3.50195 6.02099 3.89854 6.41764 4.37678 6.41764H5.05338L6.8381 22.8067C7.01304 24.4397 8.38952 25.6646 10.0226 25.6646H17.978C19.6227 25.6646 20.9875 24.4397 21.1624 22.8067L22.9472 6.41764H23.6237C24.1019 6.41764 24.4986 6.02105 24.4986 5.54275C24.4986 5.06451 24.102 4.66792 23.6237 4.66792H23.6238ZM19.4243 22.6201C19.3427 23.355 18.7244 23.9148 17.9779 23.9148H10.0225C9.27594 23.9148 8.65776 23.355 8.57606 22.6201L7.31628 11.0835H20.6842L19.4243 22.6201ZM20.8708 9.33384H7.12969L6.81475 6.41764H21.1974L20.8709 9.33384H20.8708Z" fill="#676767"/>
+                                  <path d="M16.0298 14.0231C15.5516 14.0231 15.155 14.4197 15.155 14.8979V20.1471C15.155 20.6253 15.5516 21.022 16.0298 21.022C16.5081 21.022 16.9047 20.6253 16.9047 20.1471V14.8979C16.9047 14.4197 16.5198 14.0231 16.0298 14.0231ZM11.9589 13.9998C11.4806 13.9998 11.084 14.3963 11.084 14.8746V20.1237C11.084 20.602 11.4806 20.9986 11.9588 20.9986C12.4371 20.9986 12.8337 20.602 12.8337 20.1237V14.8746C12.8337 14.3963 12.4371 13.9998 11.9588 13.9998H11.9589Z" fill="#676767"/>
+                                </g>
+                              </g>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_30_54068">
+                                <rect width="28" height="28" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                    </button>
+                </div>
+                <div class="border-b py-[20px] flex justify-between items-center md:px-5">
+                    <div class="flex justify-start items-center md:gap-[25px] gap-[15px]">
+                        <img src="img/car-dp.png" alt="">
+                        <div class="">
+                            <p class="text-[#3281F7]">
+                                Lexus LS500 Premium V2
+                            </p>
+                            <p class="text-[#000]">
+                                12/12/2023
+                            </p>
+                        </div>
+                    </div>
+
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <g clip-path="url(#clip0_30_54068)">
+                              <mask id="mask0_30_54068" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+                                <path d="M0 0H28V28H0V0Z" fill="white"/>
+                              </mask>
+                              <g mask="url(#mask0_30_54068)">
+                                <mask id="mask1_30_54068" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+                                  <path d="M0 0H28V28H0V0Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask1_30_54068)">
+                                  <path d="M23.6238 4.66792H14.875V3.20979C14.875 2.73155 14.4785 2.33496 14.0002 2.33496C13.522 2.33496 13.1253 2.73155 13.1253 3.20979V4.66792H4.37678C3.89854 4.66792 3.50195 5.06451 3.50195 5.54275C3.50195 6.02099 3.89854 6.41764 4.37678 6.41764H5.05338L6.8381 22.8067C7.01304 24.4397 8.38952 25.6646 10.0226 25.6646H17.978C19.6227 25.6646 20.9875 24.4397 21.1624 22.8067L22.9472 6.41764H23.6237C24.1019 6.41764 24.4986 6.02105 24.4986 5.54275C24.4986 5.06451 24.102 4.66792 23.6237 4.66792H23.6238ZM19.4243 22.6201C19.3427 23.355 18.7244 23.9148 17.9779 23.9148H10.0225C9.27594 23.9148 8.65776 23.355 8.57606 22.6201L7.31628 11.0835H20.6842L19.4243 22.6201ZM20.8708 9.33384H7.12969L6.81475 6.41764H21.1974L20.8709 9.33384H20.8708Z" fill="#676767"/>
+                                  <path d="M16.0298 14.0231C15.5516 14.0231 15.155 14.4197 15.155 14.8979V20.1471C15.155 20.6253 15.5516 21.022 16.0298 21.022C16.5081 21.022 16.9047 20.6253 16.9047 20.1471V14.8979C16.9047 14.4197 16.5198 14.0231 16.0298 14.0231ZM11.9589 13.9998C11.4806 13.9998 11.084 14.3963 11.084 14.8746V20.1237C11.084 20.602 11.4806 20.9986 11.9588 20.9986C12.4371 20.9986 12.8337 20.602 12.8337 20.1237V14.8746C12.8337 14.3963 12.4371 13.9998 11.9588 13.9998H11.9589Z" fill="#676767"/>
+                                </g>
+                              </g>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_30_54068">
+                                <rect width="28" height="28" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                    </button>
+                </div>
+                <div class="border-b py-[20px] flex justify-between items-center md:px-5">
+                    <div class="flex justify-start items-center md:gap-[25px] gap-[15px]">
+                        <img src="img/car-dp.png" alt="">
+                        <div class="">
+                            <p class="text-[#3281F7]">
+                                Lexus LS500 Premium V2
+                            </p>
+                            <p class="text-[#000]">
+                                12/12/2023
+                            </p>
+                        </div>
+                    </div>
+
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <g clip-path="url(#clip0_30_54068)">
+                              <mask id="mask0_30_54068" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+                                <path d="M0 0H28V28H0V0Z" fill="white"/>
+                              </mask>
+                              <g mask="url(#mask0_30_54068)">
+                                <mask id="mask1_30_54068" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+                                  <path d="M0 0H28V28H0V0Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask1_30_54068)">
+                                  <path d="M23.6238 4.66792H14.875V3.20979C14.875 2.73155 14.4785 2.33496 14.0002 2.33496C13.522 2.33496 13.1253 2.73155 13.1253 3.20979V4.66792H4.37678C3.89854 4.66792 3.50195 5.06451 3.50195 5.54275C3.50195 6.02099 3.89854 6.41764 4.37678 6.41764H5.05338L6.8381 22.8067C7.01304 24.4397 8.38952 25.6646 10.0226 25.6646H17.978C19.6227 25.6646 20.9875 24.4397 21.1624 22.8067L22.9472 6.41764H23.6237C24.1019 6.41764 24.4986 6.02105 24.4986 5.54275C24.4986 5.06451 24.102 4.66792 23.6237 4.66792H23.6238ZM19.4243 22.6201C19.3427 23.355 18.7244 23.9148 17.9779 23.9148H10.0225C9.27594 23.9148 8.65776 23.355 8.57606 22.6201L7.31628 11.0835H20.6842L19.4243 22.6201ZM20.8708 9.33384H7.12969L6.81475 6.41764H21.1974L20.8709 9.33384H20.8708Z" fill="#676767"/>
+                                  <path d="M16.0298 14.0231C15.5516 14.0231 15.155 14.4197 15.155 14.8979V20.1471C15.155 20.6253 15.5516 21.022 16.0298 21.022C16.5081 21.022 16.9047 20.6253 16.9047 20.1471V14.8979C16.9047 14.4197 16.5198 14.0231 16.0298 14.0231ZM11.9589 13.9998C11.4806 13.9998 11.084 14.3963 11.084 14.8746V20.1237C11.084 20.602 11.4806 20.9986 11.9588 20.9986C12.4371 20.9986 12.8337 20.602 12.8337 20.1237V14.8746C12.8337 14.3963 12.4371 13.9998 11.9588 13.9998H11.9589Z" fill="#676767"/>
+                                </g>
+                              </g>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_30_54068">
+                                <rect width="28" height="28" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                    </button>
+                </div>
+                <div class="border-b py-[20px] flex justify-between items-center md:px-5">
+                    <div class="flex justify-start items-center md:gap-[25px] gap-[15px]">
+                        <img src="img/car-dp.png" alt="">
+                        <div class="">
+                            <p class="text-[#3281F7]">
+                                Lexus LS500 Premium V2
+                            </p>
+                            <p class="text-[#000]">
+                                12/12/2023
+                            </p>
+                        </div>
+                    </div>
+
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <g clip-path="url(#clip0_30_54068)">
+                              <mask id="mask0_30_54068" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+                                <path d="M0 0H28V28H0V0Z" fill="white"/>
+                              </mask>
+                              <g mask="url(#mask0_30_54068)">
+                                <mask id="mask1_30_54068" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+                                  <path d="M0 0H28V28H0V0Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask1_30_54068)">
+                                  <path d="M23.6238 4.66792H14.875V3.20979C14.875 2.73155 14.4785 2.33496 14.0002 2.33496C13.522 2.33496 13.1253 2.73155 13.1253 3.20979V4.66792H4.37678C3.89854 4.66792 3.50195 5.06451 3.50195 5.54275C3.50195 6.02099 3.89854 6.41764 4.37678 6.41764H5.05338L6.8381 22.8067C7.01304 24.4397 8.38952 25.6646 10.0226 25.6646H17.978C19.6227 25.6646 20.9875 24.4397 21.1624 22.8067L22.9472 6.41764H23.6237C24.1019 6.41764 24.4986 6.02105 24.4986 5.54275C24.4986 5.06451 24.102 4.66792 23.6237 4.66792H23.6238ZM19.4243 22.6201C19.3427 23.355 18.7244 23.9148 17.9779 23.9148H10.0225C9.27594 23.9148 8.65776 23.355 8.57606 22.6201L7.31628 11.0835H20.6842L19.4243 22.6201ZM20.8708 9.33384H7.12969L6.81475 6.41764H21.1974L20.8709 9.33384H20.8708Z" fill="#676767"/>
+                                  <path d="M16.0298 14.0231C15.5516 14.0231 15.155 14.4197 15.155 14.8979V20.1471C15.155 20.6253 15.5516 21.022 16.0298 21.022C16.5081 21.022 16.9047 20.6253 16.9047 20.1471V14.8979C16.9047 14.4197 16.5198 14.0231 16.0298 14.0231ZM11.9589 13.9998C11.4806 13.9998 11.084 14.3963 11.084 14.8746V20.1237C11.084 20.602 11.4806 20.9986 11.9588 20.9986C12.4371 20.9986 12.8337 20.602 12.8337 20.1237V14.8746C12.8337 14.3963 12.4371 13.9998 11.9588 13.9998H11.9589Z" fill="#676767"/>
+                                </g>
+                              </g>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_30_54068">
+                                <rect width="28" height="28" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                    </button>
+                </div>
+                <div class="text-center mt-[72px]">
+                    <button class="btn bg-[#F3A94D] py-[14px] px-[100px] text-white rounded-[5px]">
+                        顯示更多
+                    </button>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <!-- history -->
+
+    <!-- footer -->
+    <footer class="bg-[#161616] pt-[50px] pb-[20px]">
+      <div class="container">
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-40px">
+          <div class="item">
+            <a href="">
+              <img src="img/coreharry.svg" class="mb-[35px] mt-[5px]" alt="" />
+            </a>
+            <a
+              href=""
+              class="flex items-center text-white mb-[10px] gap-[10px]"
+            >
+              <i class="fa fa-envelope text-[#F3A94D]"></i>
+              <span>carhero@gmail.com</span>
+            </a>
+            <a
+              href=""
+              class="flex items-center text-white mb-[10px] gap-[10px]"
+            >
+              <i class="fa fa-envelope text-[#F3A94D]"></i>
+              <span> (+852) 2324 3242 </span>
+            </a>
+          </div>
+
+          <div class="item">
+            <p class="text-2xl font-bold text-white mb-[25px]">Quick Links</p>
+            <ul>
+              <li class="mb-3">
+                <a href="" class="text-white ferid-reserve mavesound">
+                  車盤列表
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li class="mb-3">
+                <a href="" class="text-white ferid-reserve"> 刊登車盤 </a>
+              </li>
+            </ul>
+            <ul class="mb-3">
+              <li>
+                <a href="" class="text-white ferid-reserve"> 我的帳戶 </a>
+              </li>
+            </ul>
+          </div>
+          <div class="item">
+            <p class="text-2xl font-bold text-white mb-[25px]">關於我們</p>
+            <ul>
+              <li class="mb-3">
+                <a href="" class="text-white ferid-reserve mavesound">
+                  車盤列表
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li class="mb-3">
+                <a href="" class="text-white ferid-reserve"> 刊登車盤 </a>
+              </li>
+            </ul>
+            <ul class="mb-3">
+              <li>
+                <a href="" class="text-white ferid-reserve"> 我的帳戶 </a>
+              </li>
+            </ul>
+          </div>
+          <div class="item">
+            <p class="text-2xl font-bold text-white mb-[25px]">搜索網站</p>
+
+            <form
+              action=""
+              class="mb-3 bg-white px-[20px] py-[12px] rounded-[5px] flex justify-between items-center"
+            >
+              <input
+                type="text"
+                placeholder="Search here..."
+                class="w-full"
+                name=""
+                id=""
+              />
+              <i class="fa fa-search text-[#F3A94D]"></i>
+            </form>
+
+            <div class="flex social mt-8 justify-start items-center gap-[14px]">
+              <a
+                href=""
+                class="icon inline-flex w-[50px] h-[50px] justify-center items-center bg-[#F3A94D] rounded-[5px]"
+              >
+                <i class="fab fa-facebook-f text-white text-2xl"></i>
+              </a>
+              <a
+                href=""
+                class="icon inline-flex w-[50px] h-[50px] justify-center items-center bg-[#F3A94D] rounded-[5px]"
+              >
+                <i class="fab fa-instagram text-white text-2xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="mt-[150px]" />
+
+        <div class="flex sm-text mt-3 justify-between items-center">
+          <div class="flex justify-start items-center gap-[10px]">
+            <a href="" class="text-white"> English </a>
+            <a href="" class="text-white"> | </a>
+            <a href="" class="text-white"> Chinese </a>
+          </div>
+          <p class="text-white">© 2022 CarHero All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- alpine -->
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+
+    <!-- app js -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
