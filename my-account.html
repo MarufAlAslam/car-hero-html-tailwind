@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarHero</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <div class="navbar py-[20px]">
+      <div class="container">
+        <div class="flex justify-between items-center">
+          <div class="burger md:hidden block">
+            <button class="menu-toggler" id="toggler">
+              <i class="fa fa-bars text-2xl"></i>
+            </button>
+          </div>
+          <div class="left flex justify-start items-center gap-[48px]">
+            <a href="">
+              <img src="img/logo.png" class="logo" alt="" />
+            </a>
+            <div class="menu-bg" id="menu-bg"></div>
+            <div
+              id="menu"
+              class="menu flex justify-start items-center gap-[40px]"
+            >
+              <a href="" class="text-black"> 首頁 </a>
+              <a href="" class="text-black"> 車盤列表 </a>
+              <a href="" class="text-black"> 車盤列表 </a>
+              <a href="" class="text-black"> 出售 </a>
+              <a href="" class="text-black"> 購買 </a>
+              <a href="" class="text-black"> 使用者中心 </a>
+            </div>
+          </div>
+
+          <div class="right flex justify-end items-center gap-[40px]">
+            <div class="group inline-block relative">
+                <button
+                  class="bg-gray-300 rounded-[50px] text-gray-700 font-semibold py-2 pl-[15px] rounded inline-flex gap-[14px] items-center border bg-white py-[3px] pr-[3px]"
+                >
+                  <i class="fa fa-bars"></i>
+                  <img src="img/avatar.png" alt="">
+                  </svg>
+                </button>
+                <ul class="absolute hidden text-gray-700 pt-1 group-hover:block dropdown-items">
+                  <li class="">
+                    <a
+                      class="rounded-t hover:bg-[#ECECEC] py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                      >我的收藏</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="rounded-t hover:bg-[#ECECEC] py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                      >瀏覽歷史</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class=" hover:bg-[#ECECEC] py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                      >出售清單</a
+                    >
+                  </li>
+                  <li>
+                    <hr>
+                  </li>
+                  <li class="">
+                    <a
+                      class="rounded-b hover:bg-[#ECECEC] py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                      >出售清單</a
+                    >
+                  </li>
+                  <li>
+                    <hr>
+                  </li>
+                  <li class="">
+                    <a
+                      class="rounded-b hover:bg-[#ECECEC] py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                      >我的帳戶</a
+                    >
+                  </li>
+                  <li>
+                    <hr>
+                  </li>
+                  <li class="">
+                    <a
+                      class="rounded-b hover:bg-[#ECECEC] py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                      >常見問題</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="rounded-b hover:bg-[#ECECEC] py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                      >登出</a
+                    >
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- navbar -->
+
+    <!-- listing-hero -->
+    <section class="listing-hero py-[100px]">
+      <div class="container">
+        <div class="text-center">
+        </div>
+      </div>
+    </section>
+    <!-- listing-hero -->
+
+    <!-- avatar -->
+    <section class="avatar-holder bg-[#F5F5F7]">
+        <div class="container">
+            <img src="img/avatar-large.png" class="w-[100px] h-[100px] relative top-[-50px] mb-[-50px]" alt="">
+        </div>
+    </section>
+    <!-- avatar -->
+
+    <!-- profile -->
+    <section class="profile bg-[#F5F5F7] pt-[15px] md:pb-[195px] pb-[50px]">
+        <div class="container">
+            <h2 class="md:text-[32px] text-[24px] font-bold">
+                我的帳號
+            </h2>
+
+            <div class="card mt-[30px] bg-white rounded-[10px] py-[30px] px-[35px]">
+                <p class="text-xl text-[#161616]">
+                    帳號資料
+                </p>
+                <div class="flex mt-[35px] justify-between items-center border-b pb-[20px]">
+                    <p class="font-bold text-[#676767] text-sm md:w-[35%] w-1/2">
+                        用戶名
+                    </p>
+                    <div class="flex md:justify-between justify-end items-center md:w-[65%] w-1/2 gap-[14px]">
+                        <p class="text-[#676767]">
+                            johnsmithcar123
+                        </p>
+                        <a href="" class="text-[#676767]">
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex py-[20px] justify-between items-center">
+                    <p class="font-bold text-[#676767] text-sm md:w-[35%] w-1/2">
+                        密碼
+                    </p>
+                    <div class="flex md:justify-between justify-end items-center md:w-[65%] w-1/2 gap-[14px]">
+                        <p class="text-[#676767]">
+                            *************
+                        </p>
+                        <a href="" class="text-[#676767]">
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-[30px] bg-white rounded-[10px] py-[30px] px-[35px]">
+                <p class="text-xl text-[#161616]">
+                    個人資料
+                </p>
+                <div class="flex mt-[35px] justify-between items-center border-b pb-[20px]">
+                    <p class="font-bold text-[#676767] text-sm md:w-[35%] w-1/2">
+                        名字
+                    </p>
+                    <div class="flex md:justify-between justify-end items-center md:w-[65%] w-1/2 gap-[14px]">
+                        <p class="text-[#676767]">
+                            John Smith
+                        </p>
+                        <a href="" class="text-[#676767]">
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex py-[20px] justify-between items-center">
+                    <p class="font-bold text-[#676767] text-sm md:w-[35%] w-1/2">
+                        出生日期
+                    </p>
+                    <div class="flex md:justify-between justify-end items-center md:w-[65%] w-1/2 gap-[14px]">
+                        <p class="text-[#676767]">
+                            12/12/2023
+                        </p>
+                        <a href="" class="text-[#676767]">
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-[30px] bg-white rounded-[10px] py-[30px] px-[35px]">
+                <p class="text-xl text-[#161616]">
+                    聯絡資料
+                </p>
+                <div class="flex mt-[35px] justify-between items-center border-b pb-[20px]">
+                    <p class="font-bold text-[#676767] text-sm md:w-[35%] w-1/2">
+                        電郵
+                    </p>
+                    <div class="flex md:justify-between justify-end items-center md:w-[65%] w-1/2 gap-[14px]">
+                        <p class="text-[#676767]">
+                            johnsmith@gmail.com
+                        </p>
+                        <a href="" class="text-[#676767]">
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex py-[20px] justify-between items-center">
+                    <p class="font-bold text-[#676767] text-sm md:w-[35%] w-1/2">
+                        電話號碼
+                    </p>
+                    <div class="flex md:justify-between justify-end items-center md:w-[65%] w-1/2 gap-[14px]">
+                        <p class="text-[#676767]">
+                            +852 2323 2323
+                        </p>
+                        <a href="" class="text-[#676767]">
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-[30px] bg-white rounded-[10px] py-[30px] px-[35px]">
+                <div class="flex justify-between items-center">
+                    <p class="font-bold text-[#D13333] text-sm md:w-[35%] w-1/2">
+                        鏟除帳號
+                    </p>
+                    <a href="" class="text-[#676767]">
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- profile -->
+
+    <!-- footer -->
+    <footer class="bg-[#161616] pt-[50px] pb-[20px]">
+      <div class="container">
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-40px">
+          <div class="item">
+            <a href="">
+              <img src="img/coreharry.svg" class="mb-[35px] mt-[5px]" alt="" />
+            </a>
+            <a
+              href=""
+              class="flex items-center text-white mb-[10px] gap-[10px]"
+            >
+              <i class="fa fa-envelope text-[#F3A94D]"></i>
+              <span>carhero@gmail.com</span>
+            </a>
+            <a
+              href=""
+              class="flex items-center text-white mb-[10px] gap-[10px]"
+            >
+              <i class="fa fa-envelope text-[#F3A94D]"></i>
+              <span> (+852) 2324 3242 </span>
+            </a>
+          </div>
+
+          <div class="item">
+            <p class="text-2xl font-bold text-white mb-[25px]">Quick Links</p>
+            <ul>
+              <li class="mb-3">
+                <a href="" class="text-white ferid-reserve mavesound">
+                  車盤列表
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li class="mb-3">
+                <a href="" class="text-white ferid-reserve"> 刊登車盤 </a>
+              </li>
+            </ul>
+            <ul class="mb-3">
+              <li>
+                <a href="" class="text-white ferid-reserve"> 我的帳戶 </a>
+              </li>
+            </ul>
+          </div>
+          <div class="item">
+            <p class="text-2xl font-bold text-white mb-[25px]">關於我們</p>
+            <ul>
+              <li class="mb-3">
+                <a href="" class="text-white ferid-reserve mavesound">
+                  車盤列表
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li class="mb-3">
+                <a href="" class="text-white ferid-reserve"> 刊登車盤 </a>
+              </li>
+            </ul>
+            <ul class="mb-3">
+              <li>
+                <a href="" class="text-white ferid-reserve"> 我的帳戶 </a>
+              </li>
+            </ul>
+          </div>
+          <div class="item">
+            <p class="text-2xl font-bold text-white mb-[25px]">搜索網站</p>
+
+            <form
+              action=""
+              class="mb-3 bg-white px-[20px] py-[12px] rounded-[5px] flex justify-between items-center"
+            >
+              <input
+                type="text"
+                placeholder="Search here..."
+                class="w-full"
+                name=""
+                id=""
+              />
+              <i class="fa fa-search text-[#F3A94D]"></i>
+            </form>
+
+            <div class="flex social mt-8 justify-start items-center gap-[14px]">
+              <a
+                href=""
+                class="icon inline-flex w-[50px] h-[50px] justify-center items-center bg-[#F3A94D] rounded-[5px]"
+              >
+                <i class="fab fa-facebook-f text-white text-2xl"></i>
+              </a>
+              <a
+                href=""
+                class="icon inline-flex w-[50px] h-[50px] justify-center items-center bg-[#F3A94D] rounded-[5px]"
+              >
+                <i class="fab fa-instagram text-white text-2xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="mt-[150px]" />
+
+        <div class="flex sm-text mt-3 justify-between items-center">
+          <div class="flex justify-start items-center gap-[10px]">
+            <a href="" class="text-white"> English </a>
+            <a href="" class="text-white"> | </a>
+            <a href="" class="text-white"> Chinese </a>
+          </div>
+          <p class="text-white">© 2022 CarHero All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- alpine -->
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+
+    <!-- app js -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

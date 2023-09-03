@@ -161,4 +161,12 @@ input[type="range"]::-webkit-slider-thumb {
   .history p{
     font-size: 14px;
   }
+
+  /* profile */
+  .profile p{
+    font-size: 13px;
+  }
+  .profile .card{
+    padding: 15px 18px;
+  }
 }
