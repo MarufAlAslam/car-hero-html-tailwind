@@ -73,14 +73,32 @@ img#flag {
   background-size: cover;
   background-position: center;
 }
-input[type=range]::-webkit-slider-thumb {
-	pointer-events: all;
-	width: 24px;
-	height: 24px;
-	-webkit-appearance: none;
+input[type="range"]::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 24px;
+  height: 24px;
+  -webkit-appearance: none;
   /* @apply w-6 h-6 appearance-none pointer-events-auto; */
-  }
+}
 
+/* favorite page */
+.dropdown-items {
+  min-width: 200px;
+  right: 0;
+  z-index: 100000000;
+  background-color: white;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.dropdown-items li a{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.dropdown-items *{
+  background-color: white;
+  border-radius: 0;
+}
 @media screen and (max-width: 767px) {
   .menu {
     background: white;
@@ -138,7 +156,6 @@ input[type=range]::-webkit-slider-thumb {
   .sm-text {
     margin-bottom: 20px;
   }
-
 
   /* car listing */
 }
