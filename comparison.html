@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarHero</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <div class="navbar py-[20px]">
+      <div class="container">
+        <div class="flex justify-between items-center">
+          <div class="burger md:hidden block">
+            <button class="menu-toggler" id="toggler">
+              <i class="fa fa-bars text-2xl"></i>
+            </button>
+          </div>
+          <div class="left flex justify-start items-center gap-[48px]">
+            <a href="">
+              <img src="img/logo.png" class="logo" alt="" />
+            </a>
+            <div class="menu-bg" id="menu-bg"></div>
+            <div
+              id="menu"
+              class="menu flex justify-start items-center gap-[40px]"
+            >
+              <a href="" class="text-black"> 首頁 </a>
+              <a href="" class="text-black"> 車盤列表 </a>
+              <a href="" class="text-black"> 車盤列表 </a>
+              <a href="" class="text-black"> 出售 </a>
+              <a href="" class="text-black"> 購買 </a>
+              <a href="" class="text-black"> 使用者中心 </a>
+            </div>
+          </div>
+
+          <div class="right flex justify-end items-center gap-[40px]">
+            <a
+              href=""
+              class="md:flex hidden justify-center items-center gap-[10px] text-[#F3A94D]"
+            >
+              <img src="img/lock.svg" alt="" />
+              註冊
+            </a>
+
+            <a
+              href=""
+              class="bg-[#F3A94D] text-white rounded-[5px] px-[45px] py-[15px] md:flex hidden gap-[10px] justify-center items-center"
+            >
+              <img src="img/user.svg" alt="" />
+              登入
+            </a>
+
+            <button class="btn bg-transparent p-0 md:hidden block">
+              <i class="fa fa-search text-2xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- navbar -->
+
+    <!-- listing-hero -->
+    <section class="listing-hero py-[100px]">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="text-[40px] text-white">車盤列表</h2>
+        </div>
+      </div>
+    </section>
+    <!-- listing-hero -->
+
+    <div class="bg-[#F5F5F7]">
+      <!-- search card -->
+      <section class="search-card relative top-[-50px] z-10 mb-[-50px]">
+        <div class="container">
+          <div
+            class="card bg-white shadow-md md:px-[40px] py-[20px] rounded-[15px]"
+          >
+            <div
+              class="flex md:flex-row flex-col gap-[15px] justify-between items-center md:px-0 px-[20px] w-full"
+            >
+              <p class="md:text-xl text-[#6E757C] text-left w-full">
+                Comparing 2/4 Cars
+              </p>
+              <form action="" class="md:w-auto w-full">
+                <select
+                  name=""
+                  class="border rounded-[15px] md:w-[310px] w-full py-[16px] px-[25px] bg-[#FCFBFB]"
+                  id=""
+                >
+                  <option value="">Sort by</option>
+                  <option value="">Sort by</option>
+                  <option value="">Sort by</option>
+                  <option value="">Sort by</option>
+                </select>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- search card -->
+
+      <!-- comparison -->
+      <section class="comparison pt-[30px] md:pb-[120px] pb-[60px]">
+        <div class="container">
+          <div class="overflow-x-auto">
+            <div class="grid md:w-auto w-[370%] grid-cols-4 gap-[20px]">
+              <div class="card min-w-[300px] md:w-auto w-[300px] bg-white p-[24px] rounded-[10px]">
+                <img src="img/car1.png" class="w-full mb-[30px]" alt="" />
+                <p class="font-bold text-xl">主要資料</p>
+                <hr class="mt-[15px] mb-[20px]" />
+                <div class="flex gap-[14px] justify-start items-center">
+                  <div
+                    class="icon-holder w-[45px] h-[45px] rounded-[5px] border-2 border-[#F3A94D] flex justify-center items-center"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_30_52619)">
+                        <mask
+                          id="mask0_30_52619"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="0"
+                          y="0"
+                          width="25"
+                          height="25"
+                        >
+                          <path d="M0 0H25V25H0V0Z" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0_30_52619)">
+                          <mask
+                            id="mask1_30_52619"
+                            style="mask-type: luminance"
+                            maskUnits="userSpaceOnUse"
+                            x="0"
+                            y="0"
+                            width="25"
+                            height="25"
+                          >
+                            <path d="M0 0H25V25H0V0Z" fill="white" />
+                          </mask>
+                          <g mask="url(#mask1_30_52619)">
+                            <path
+                              d="M12.5102 14.0629C12.1978 14.0629 11.9374 14.1774 11.7291 14.3441L9.27113 13.688C8.84413 13.5734 8.42758 13.8234 8.31298 14.24C8.19843 14.6566 8.44838 15.0836 8.86498 15.1981L11.3125 15.8543C11.5104 16.3334 11.9791 16.6667 12.5207 16.6667C13.2393 16.6667 13.8225 16.0834 13.8225 15.3648C13.8225 14.6461 13.2289 14.0629 12.5102 14.0629Z"
+                              fill="#676767"
+                            />
+                            <path
+                              d="M22.3411 12.7398C22.3307 12.7085 22.3203 12.6981 22.3099 12.6669C20.8622 8.62587 17.0191 5.73047 12.4989 5.73047C7.95803 5.73047 4.10448 8.65712 2.67763 12.7085C2.67763 12.719 2.66723 12.719 2.66723 12.7294V12.7398C2.29223 13.8125 2.08398 14.9582 2.08398 16.1455V19.0096C2.08398 19.4366 2.43808 19.7907 2.86508 19.7907H22.1329C22.5599 19.7907 22.914 19.4366 22.914 19.0096V16.1455C22.914 14.9582 22.7057 13.823 22.3412 12.771V12.7398H22.3411ZM21.3517 18.2285H3.64623V16.1455C3.64623 15.3644 3.76078 14.6145 3.94823 13.8855L5.01058 14.1666C5.07308 14.1875 5.14598 14.1979 5.20848 14.1979C5.55218 14.1979 5.86463 13.9688 5.95838 13.6147C6.07288 13.1981 5.82298 12.771 5.40638 12.6565L4.47938 12.4169C5.79173 9.62572 8.51003 7.61562 11.7179 7.33442V8.66752C11.7179 9.09452 12.072 9.44867 12.499 9.44867C12.926 9.44867 13.2801 9.09452 13.2801 8.66752V7.34482C16.4879 7.62602 19.2062 9.63612 20.5081 12.4273L19.5812 12.6773C19.1646 12.7918 18.9146 13.2189 19.0292 13.6355C19.1229 13.9896 19.4354 14.2187 19.7791 14.2187C19.8416 14.2187 19.9145 14.2083 19.9769 14.1875L21.0289 13.9063C21.2163 14.6249 21.3309 15.3852 21.3309 16.1663V18.2285H21.3517Z"
+                              fill="#676767"
+                            />
+                          </g>
+                        </g>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_30_52619">
+                          <rect width="25" height="25" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="">
+                    <p class="text-sm text-[#676767]">里程数</p>
+                    <p class="text-sm text-[#161616] font-bold">18,000 KM</p>
+                  </div>
+                </div>
+                <div
+                  class="flex mt-[20px] gap-[14px] justify-start items-center"
+                >
+                  <div
+                    class="icon-holder w-[45px] h-[45px] rounded-[5px] border-2 border-[#F3A94D] flex justify-center items-center"
+                  >
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <mask
+                        id="mask0_30_52631"
+                        style="mask-type: luminance"
+                        maskUnits="userSpaceOnUse"
+                        x="0"
+                        y="0"
+                        width="25"
+                        height="25"
+                      >
+                        <path d="M0 0H25V25H0V0Z" fill="white" />
+                      </mask>
+                      <g mask="url(#mask0_30_52631)">
+                        <path
+                          d="M20.0533 4.16796H17.4495V2.86606C17.4495 2.43906 17.0954 2.08496 16.6684 2.08496C16.2414 2.08496 15.8873 2.43906 15.8873 2.86606V4.16796H9.11751V2.86606C9.11751 2.43906 8.76341 2.08496 8.33641 2.08496C7.90941 2.08496 7.55526 2.43906 7.55526 2.86606V4.16796H4.95151C3.95171 4.16796 3.12891 4.99076 3.12891 5.99056V20.0509C3.12891 21.0507 3.95171 21.8735 4.95151 21.8735H20.0533C21.0532 21.8735 21.876 21.0507 21.876 20.0509V5.99056C21.876 4.99076 21.0532 4.16796 20.0533 4.16796ZM4.95146 5.73021H20.0533C20.1992 5.73021 20.3137 5.84476 20.3137 5.99056V8.33396H4.69116V5.99056C4.69116 5.84476 4.80566 5.73021 4.95146 5.73021ZM20.0532 20.3112H4.95151C4.80571 20.3112 4.69116 20.1967 4.69116 20.0508V9.89621H20.3137V20.0508C20.3137 20.1967 20.1991 20.3112 20.0533 20.3112H20.0532Z"
+                          fill="#676767"
+                        />
+                        <path
+                          d="M8.33642 12.5008C7.76362 12.5008 7.29492 12.9694 7.29492 13.5423C7.29492 14.1151 7.76362 14.5838 8.33642 14.5838H8.34682C8.91967 14.5838 9.38832 14.1151 9.38832 13.5423C9.37792 12.9694 8.90927 12.5008 8.33642 12.5008ZM12.5024 12.5008C11.9192 12.5008 11.4609 12.9694 11.4609 13.5423C11.4609 14.1151 11.9296 14.5838 12.5024 14.5838C13.0752 14.5838 13.5439 14.1151 13.5439 13.5423C13.5439 12.9694 13.0857 12.5008 12.5024 12.5008ZM16.6684 12.5008C16.0852 12.5008 15.6269 12.9694 15.6269 13.5423C15.6269 14.1151 16.0956 14.5838 16.6684 14.5838C17.2412 14.5838 17.7099 14.1151 17.7099 13.5423C17.7099 12.9694 17.2412 12.5008 16.6684 12.5008ZM8.33642 16.146C7.76362 16.146 7.29492 16.6147 7.29492 17.1875C7.29492 17.7603 7.76362 18.229 8.33642 18.229H8.34682C8.91967 18.229 9.38832 17.7603 9.38832 17.1875C9.37792 16.6147 8.90927 16.146 8.33642 16.146ZM12.5024 16.146C11.9192 16.146 11.4609 16.6147 11.4609 17.1875C11.4609 17.7603 11.9296 18.229 12.5024 18.229C13.0752 18.229 13.5439 17.7603 13.5439 17.1875C13.5439 16.6147 13.0857 16.146 12.5024 16.146Z"
+                          fill="#676767"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="">
+                    <p class="text-sm text-[#676767]">註冊日期</p>
+                    <p class="text-sm text-[#161616] font-bold">2019-12-22</p>
+                  </div>
+                </div>
+                <div
+                  class="flex mt-[20px] gap-[14px] justify-start items-center"
+                >
+                  <div
+                    class="icon-holder w-[45px] h-[45px] rounded-[5px] border-2 border-[#F3A94D] flex justify-center items-center"
+                  >
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_30_52648)">
+                        <mask
+                          id="mask0_30_52648"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="0"
+                          y="0"
+                          width="25"
+                          height="25"
+                        >
+                          <path d="M0 0H25V25H0V0Z" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0_30_52648)">
+                          <mask
+                            id="mask1_30_52648"
+                            style="mask-type: luminance"
+                            maskUnits="userSpaceOnUse"
+                            x="0"
+                            y="0"
+                            width="25"
+                            height="25"
+                          >
+                            <path d="M0 0H25V25H0V0Z" fill="white" />
+                          </mask>
+                          <g mask="url(#mask1_30_52648)">
+                            <path
+                              d="M21.4843 4.19636C21.3648 4.12786 21.2293 4.09211 21.0916 4.09272C20.9538 4.09334 20.8186 4.13029 20.6998 4.19986C18.1264 5.70651 15.5008 4.93786 12.7211 4.12421C9.74515 3.25306 6.66795 2.35226 3.51215 4.19986C3.3943 4.26885 3.29657 4.36749 3.22865 4.48596C3.16073 4.60442 3.125 4.7386 3.125 4.87516V21.0945C3.125 21.5267 3.4753 21.877 3.9075 21.877C4.3397 21.877 4.69 21.5267 4.69 21.0945V16.3521C7.1397 15.1322 9.641 15.8643 12.2815 16.6371C13.9801 17.1344 15.7114 17.6412 17.4718 17.6412C18.7956 17.6412 20.136 17.3544 21.4905 16.5614C21.6083 16.4924 21.706 16.3938 21.774 16.2753C21.8419 16.1569 21.8776 16.0227 21.8776 15.8862V4.87516C21.8776 4.73741 21.8412 4.6021 21.7722 4.48291C21.7031 4.36372 21.6038 4.26487 21.4843 4.19636ZM20.3126 15.4205C17.863 16.6402 15.3616 15.9081 12.7211 15.1352C11.0224 14.6379 9.29125 14.1311 7.5308 14.1311C6.59205 14.1311 5.6445 14.2755 4.69 14.6422V5.34086C7.13955 4.12106 9.641 4.85326 12.2815 5.62616C14.8859 6.38856 17.5681 7.17346 20.3126 6.11916V15.4205Z"
+                              fill="#676767"
+                            />
+                          </g>
+                        </g>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_30_52648">
+                          <rect width="25" height="25" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="">
+                    <p class="text-sm text-[#676767]">前車主數量</p>
+                    <p class="text-sm text-[#161616] font-bold">2</p>
+                  </div>
+                </div>
+                <div
+                  class="flex mt-[20px] gap-[14px] justify-start items-center"
+                >
+                  <div
+                    class="icon-holder w-[45px] h-[45px] rounded-[5px] border-2 border-[#F3A94D] flex justify-center items-center"
+                  >
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_30_52663)">
+                        <mask
+                          id="mask0_30_52663"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="0"
+                          y="0"
+                          width="25"
+                          height="25"
+                        >
+                          <path d="M0 0H25V25H0V0Z" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0_30_52663)">
+                          <mask
+                            id="mask1_30_52663"
+                            style="mask-type: luminance"
+                            maskUnits="userSpaceOnUse"
+                            x="0"
+                            y="0"
+                            width="25"
+                            height="25"
+                          >
+                            <path d="M0 0H25V25H0V0Z" fill="white" />
+                          </mask>
+                          <g mask="url(#mask1_30_52663)">
+                            <path
+                              d="M19.2709 9.89742H17.028C15.5357 9.89742 14.3217 8.68337 14.3217 7.19112V5.83037C14.3217 4.33807 15.5357 3.12402 17.028 3.12402H17.3471C18.8394 3.12402 20.0534 4.33807 20.0534 5.83037V9.11492C20.0534 9.54707 19.7031 9.89742 19.2709 9.89742ZM17.028 4.68902C16.3987 4.68902 15.8867 5.20107 15.8867 5.83037V7.19112C15.8867 7.82042 16.3987 8.33242 17.028 8.33242H18.4883V5.83037C18.4883 5.20107 17.9764 4.68902 17.3471 4.68902H17.028ZM9.63543 9.89742H7.39258C5.90028 9.89742 4.68623 8.68337 4.68623 7.19112V5.83037C4.68623 4.33807 5.90028 3.12402 7.39258 3.12402H7.71163C9.20388 3.12402 10.4179 4.33807 10.4179 5.83037V9.11492C10.4179 9.54707 10.0676 9.89742 9.63543 9.89742ZM7.39258 4.68902C6.76323 4.68902 6.25123 5.20107 6.25123 5.83037V7.19112C6.25123 7.82042 6.76323 8.33242 7.39258 8.33242H8.85293V5.83037C8.85293 5.20107 8.34093 4.68902 7.71163 4.68902H7.39258ZM14.5834 16.6683H12.3405C10.8482 16.6683 9.63418 15.4543 9.63418 13.962V12.6013C9.63418 11.109 10.8482 9.89497 12.3405 9.89497H12.6596C14.1518 9.89497 15.3659 11.109 15.3659 12.6013V15.8858C15.3659 16.3179 15.0156 16.6683 14.5834 16.6683ZM12.3405 11.4599C11.7112 11.4599 11.1992 11.972 11.1992 12.6013V13.962C11.1992 14.5913 11.7112 15.1033 12.3405 15.1033H13.8009V12.6013C13.8009 11.972 13.2889 11.4599 12.6596 11.4599H12.3405ZM17.9688 22.9182H7.03133C6.59913 22.9182 6.24883 22.5679 6.24883 22.1357V21.6148C6.24883 19.4602 8.00173 17.7072 10.1563 17.7072H14.8438C16.9984 17.7072 18.7513 19.4602 18.7513 21.6148V22.1357C18.7513 22.5679 18.401 22.9182 17.9688 22.9182ZM7.82833 21.3532H17.1718C17.0414 20.1842 16.0471 19.2722 14.8438 19.2722H10.1563C8.95308 19.2722 7.95873 20.1842 7.82833 21.3532ZM7.55208 16.1475H2.86458C2.43238 16.1475 2.08203 15.7971 2.08203 15.365V14.8442C2.08203 12.6896 3.83493 10.9367 5.98958 10.9367H7.55208C7.98428 10.9367 8.33463 11.287 8.33463 11.7192C8.33463 12.1513 7.98428 12.5016 7.55208 12.5016H5.98958C4.78638 12.5016 3.79208 13.4136 3.66158 14.5825H7.55208C7.98428 14.5825 8.33463 14.9328 8.33463 15.365C8.33463 15.7971 7.98428 16.1475 7.55208 16.1475ZM22.1355 16.1473H17.448C17.0158 16.1473 16.6654 15.797 16.6654 15.3648C16.6654 14.9327 17.0158 14.5824 17.448 14.5824H21.3385C21.208 13.4134 20.2137 12.5015 19.0105 12.5015H17.448C17.0158 12.5015 16.6654 12.1512 16.6654 11.719C16.6654 11.2869 17.0158 10.9365 17.448 10.9365H19.0105C21.1651 10.9365 22.918 12.6894 22.918 14.844V15.3648C22.918 15.797 22.5677 16.1473 22.1355 16.1473Z"
+                              fill="#676767"
+                            />
+                          </g>
+                        </g>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_30_52663">
+                          <rect width="25" height="25" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="">
+                    <p class="text-sm text-[#676767]">座位數目</p>
+                    <p class="text-sm text-[#161616] font-bold">5</p>
+                  </div>
+                </div>
+
+                <p class="mt-[35px] font-bold text-xl">其他細節</p>
+                <hr class="mt-[15px] mb-[10px]" />
+                <div
+                  class="flex justify-between items-center py-[17px] border-b border-[#D9D9D9]"
+                >
+                  <p class="text-[#676767] text-sm">行貨／水貨</p>
+                  <p class="text-[#161616] text-sm font-bold">行貨</p>
+                </div>
+                <div
+                  class="flex justify-between items-center py-[17px] border-b border-[#D9D9D9]"
+                >
+                  <p class="text-[#676767] text-sm">傳動</p>
+                  <p class="text-[#161616] text-sm font-bold">自動波</p>
+                </div>
+                <div
+                  class="flex justify-between items-center py-[17px] border-b border-[#D9D9D9]"
+                >
+                  <p class="text-[#676767] text-sm">製造年份</p>
+                  <p class="text-[#161616] text-sm font-bold">2014</p>
+                </div>
+                <div
+                  class="flex justify-between items-center py-[17px] border-b border-[#D9D9D9]"
+                >
+                  <p class="text-[#676767] text-sm">首次登記年份</p>
+                  <p class="text-[#161616] text-sm font-bold">2014</p>
+                </div>
+                <div class="flex justify-between items-center py-[17px]">
+                  <p class="text-[#676767] text-sm">編號</p>
+                  <p class="text-[#161616] text-sm font-bold">MS0010527</p>
+                </div>
+                <button
+                  class="bg-[#fff] border-2 mt-[20px] border-[#F3A94D] w-full p-[14px] text-[#F3A94D] text-lg font-[500] rounded-[8px]"
+                >
+                  鏟除
+                </button>
+              </div>
+              <div class="card min-w-[300px] md:w-auto w-[300px] bg-white p-[24px] rounded-[10px]">
+                <img src="img/car2.png" class="w-full mb-[30px]" alt="" />
+                <p class="font-bold text-xl">主要資料</p>
+                <hr class="mt-[15px] mb-[20px]" />
+                <div class="flex gap-[14px] justify-start items-center">
+                  <div
+                    class="icon-holder w-[45px] h-[45px] rounded-[5px] border-2 border-[#F3A94D] flex justify-center items-center"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_30_52619)">
+                        <mask
+                          id="mask0_30_52619"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="0"
+                          y="0"
+                          width="25"
+                          height="25"
+                        >
+                          <path d="M0 0H25V25H0V0Z" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0_30_52619)">
+                          <mask
+                            id="mask1_30_52619"
+                            style="mask-type: luminance"
+                            maskUnits="userSpaceOnUse"
+                            x="0"
+                            y="0"
+                            width="25"
+                            height="25"
+                          >
+                            <path d="M0 0H25V25H0V0Z" fill="white" />
+                          </mask>
+                          <g mask="url(#mask1_30_52619)">
+                            <path
+                              d="M12.5102 14.0629C12.1978 14.0629 11.9374 14.1774 11.7291 14.3441L9.27113 13.688C8.84413 13.5734 8.42758 13.8234 8.31298 14.24C8.19843 14.6566 8.44838 15.0836 8.86498 15.1981L11.3125 15.8543C11.5104 16.3334 11.9791 16.6667 12.5207 16.6667C13.2393 16.6667 13.8225 16.0834 13.8225 15.3648C13.8225 14.6461 13.2289 14.0629 12.5102 14.0629Z"
+                              fill="#676767"
+                            />
+                            <path
+                              d="M22.3411 12.7398C22.3307 12.7085 22.3203 12.6981 22.3099 12.6669C20.8622 8.62587 17.0191 5.73047 12.4989 5.73047C7.95803 5.73047 4.10448 8.65712 2.67763 12.7085C2.67763 12.719 2.66723 12.719 2.66723 12.7294V12.7398C2.29223 13.8125 2.08398 14.9582 2.08398 16.1455V19.0096C2.08398 19.4366 2.43808 19.7907 2.86508 19.7907H22.1329C22.5599 19.7907 22.914 19.4366 22.914 19.0096V16.1455C22.914 14.9582 22.7057 13.823 22.3412 12.771V12.7398H22.3411ZM21.3517 18.2285H3.64623V16.1455C3.64623 15.3644 3.76078 14.6145 3.94823 13.8855L5.01058 14.1666C5.07308 14.1875 5.14598 14.1979 5.20848 14.1979C5.55218 14.1979 5.86463 13.9688 5.95838 13.6147C6.07288 13.1981 5.82298 12.771 5.40638 12.6565L4.47938 12.4169C5.79173 9.62572 8.51003 7.61562 11.7179 7.33442V8.66752C11.7179 9.09452 12.072 9.44867 12.499 9.44867C12.926 9.44867 13.2801 9.09452 13.2801 8.66752V7.34482C16.4879 7.62602 19.2062 9.63612 20.5081 12.4273L19.5812 12.6773C19.1646 12.7918 18.9146 13.2189 19.0292 13.6355C19.1229 13.9896 19.4354 14.2187 19.7791 14.2187C19.8416 14.2187 19.9145 14.2083 19.9769 14.1875L21.0289 13.9063C21.2163 14.6249 21.3309 15.3852 21.3309 16.1663V18.2285H21.3517Z"
+                              fill="#676767"
+                            />
+                          </g>
+                        </g>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_30_52619">
+                          <rect width="25" height="25" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="">
+                    <p class="text-sm text-[#676767]">里程数</p>
+                    <p class="text-sm text-[#161616] font-bold">18,000 KM</p>
+                  </div>
+                </div>
+                <div
+                  class="flex mt-[20px] gap-[14px] justify-start items-center"
+                >
+                  <div
+                    class="icon-holder w-[45px] h-[45px] rounded-[5px] border-2 border-[#F3A94D] flex justify-center items-center"
+                  >
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <mask
+                        id="mask0_30_52631"
+                        style="mask-type: luminance"
+                        maskUnits="userSpaceOnUse"
+                        x="0"
+                        y="0"
+                        width="25"
+                        height="25"
+                      >
+                        <path d="M0 0H25V25H0V0Z" fill="white" />
+                      </mask>
+                      <g mask="url(#mask0_30_52631)">
+                        <path
+                          d="M20.0533 4.16796H17.4495V2.86606C17.4495 2.43906 17.0954 2.08496 16.6684 2.08496C16.2414 2.08496 15.8873 2.43906 15.8873 2.86606V4.16796H9.11751V2.86606C9.11751 2.43906 8.76341 2.08496 8.33641 2.08496C7.90941 2.08496 7.55526 2.43906 7.55526 2.86606V4.16796H4.95151C3.95171 4.16796 3.12891 4.99076 3.12891 5.99056V20.0509C3.12891 21.0507 3.95171 21.8735 4.95151 21.8735H20.0533C21.0532 21.8735 21.876 21.0507 21.876 20.0509V5.99056C21.876 4.99076 21.0532 4.16796 20.0533 4.16796ZM4.95146 5.73021H20.0533C20.1992 5.73021 20.3137 5.84476 20.3137 5.99056V8.33396H4.69116V5.99056C4.69116 5.84476 4.80566 5.73021 4.95146 5.73021ZM20.0532 20.3112H4.95151C4.80571 20.3112 4.69116 20.1967 4.69116 20.0508V9.89621H20.3137V20.0508C20.3137 20.1967 20.1991 20.3112 20.0533 20.3112H20.0532Z"
+                          fill="#676767"
+                        />
+                        <path
+                          d="M8.33642 12.5008C7.76362 12.5008 7.29492 12.9694 7.29492 13.5423C7.29492 14.1151 7.76362 14.5838 8.33642 14.5838H8.34682C8.91967 14.5838 9.38832 14.1151 9.38832 13.5423C9.37792 12.9694 8.90927 12.5008 8.33642 12.5008ZM12.5024 12.5008C11.9192 12.5008 11.4609 12.9694 11.4609 13.5423C11.4609 14.1151 11.9296 14.5838 12.5024 14.5838C13.0752 14.5838 13.5439 14.1151 13.5439 13.5423C13.5439 12.9694 13.0857 12.5008 12.5024 12.5008ZM16.6684 12.5008C16.0852 12.5008 15.6269 12.9694 15.6269 13.5423C15.6269 14.1151 16.0956 14.5838 16.6684 14.5838C17.2412 14.5838 17.7099 14.1151 17.7099 13.5423C17.7099 12.9694 17.2412 12.5008 16.6684 12.5008ZM8.33642 16.146C7.76362 16.146 7.29492 16.6147 7.29492 17.1875C7.29492 17.7603 7.76362 18.229 8.33642 18.229H8.34682C8.91967 18.229 9.38832 17.7603 9.38832 17.1875C9.37792 16.6147 8.90927 16.146 8.33642 16.146ZM12.5024 16.146C11.9192 16.146 11.4609 16.6147 11.4609 17.1875C11.4609 17.7603 11.9296 18.229 12.5024 18.229C13.0752 18.229 13.5439 17.7603 13.5439 17.1875C13.5439 16.6147 13.0857 16.146 12.5024 16.146Z"
+                          fill="#676767"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="">
+                    <p class="text-sm text-[#676767]">註冊日期</p>
+                    <p class="text-sm text-[#161616] font-bold">2019-12-22</p>
+                  </div>
+                </div>
+                <div
+                  class="flex mt-[20px] gap-[14px] justify-start items-center"
+                >
+                  <div
+                    class="icon-holder w-[45px] h-[45px] rounded-[5px] border-2 border-[#F3A94D] flex justify-center items-center"
+                  >
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_30_52648)">
+                        <mask
+                          id="mask0_30_52648"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="0"
+                          y="0"
+                          width="25"
+                          height="25"
+                        >
+                          <path d="M0 0H25V25H0V0Z" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0_30_52648)">
+                          <mask
+                            id="mask1_30_52648"
+                            style="mask-type: luminance"
+                            maskUnits="userSpaceOnUse"
+                            x="0"
+                            y="0"
+                            width="25"
+                            height="25"
+                          >
+                            <path d="M0 0H25V25H0V0Z" fill="white" />
+                          </mask>
+                          <g mask="url(#mask1_30_52648)">
+                            <path
+                              d="M21.4843 4.19636C21.3648 4.12786 21.2293 4.09211 21.0916 4.09272C20.9538 4.09334 20.8186 4.13029 20.6998 4.19986C18.1264 5.70651 15.5008 4.93786 12.7211 4.12421C9.74515 3.25306 6.66795 2.35226 3.51215 4.19986C3.3943 4.26885 3.29657 4.36749 3.22865 4.48596C3.16073 4.60442 3.125 4.7386 3.125 4.87516V21.0945C3.125 21.5267 3.4753 21.877 3.9075 21.877C4.3397 21.877 4.69 21.5267 4.69 21.0945V16.3521C7.1397 15.1322 9.641 15.8643 12.2815 16.6371C13.9801 17.1344 15.7114 17.6412 17.4718 17.6412C18.7956 17.6412 20.136 17.3544 21.4905 16.5614C21.6083 16.4924 21.706 16.3938 21.774 16.2753C21.8419 16.1569 21.8776 16.0227 21.8776 15.8862V4.87516C21.8776 4.73741 21.8412 4.6021 21.7722 4.48291C21.7031 4.36372 21.6038 4.26487 21.4843 4.19636ZM20.3126 15.4205C17.863 16.6402 15.3616 15.9081 12.7211 15.1352C11.0224 14.6379 9.29125 14.1311 7.5308 14.1311C6.59205 14.1311 5.6445 14.2755 4.69 14.6422V5.34086C7.13955 4.12106 9.641 4.85326 12.2815 5.62616C14.8859 6.38856 17.5681 7.17346 20.3126 6.11916V15.4205Z"
+                              fill="#676767"
+                            />
+                          </g>
+                        </g>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_30_52648">
+                          <rect width="25" height="25" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="">
+                    <p class="text-sm text-[#676767]">前車主數量</p>
+                    <p class="text-sm text-[#161616] font-bold">2</p>
+                  </div>
+                </div>
+                <div
+                  class="flex mt-[20px] gap-[14px] justify-start items-center"
+                >
+                  <div
+                    class="icon-holder w-[45px] h-[45px] rounded-[5px] border-2 border-[#F3A94D] flex justify-center items-center"
+                  >
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_30_52663)">
+                        <mask
+                          id="mask0_30_52663"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="0"
+                          y="0"
+                          width="25"
+                          height="25"
+                        >
+                          <path d="M0 0H25V25H0V0Z" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0_30_52663)">
+                          <mask
+                            id="mask1_30_52663"
+                            style="mask-type: luminance"
+                            maskUnits="userSpaceOnUse"
+                            x="0"
+                            y="0"
+                            width="25"
+                            height="25"
+                          >
+                            <path d="M0 0H25V25H0V0Z" fill="white" />
+                          </mask>
+                          <g mask="url(#mask1_30_52663)">
+                            <path
+                              d="M19.2709 9.89742H17.028C15.5357 9.89742 14.3217 8.68337 14.3217 7.19112V5.83037C14.3217 4.33807 15.5357 3.12402 17.028 3.12402H17.3471C18.8394 3.12402 20.0534 4.33807 20.0534 5.83037V9.11492C20.0534 9.54707 19.7031 9.89742 19.2709 9.89742ZM17.028 4.68902C16.3987 4.68902 15.8867 5.20107 15.8867 5.83037V7.19112C15.8867 7.82042 16.3987 8.33242 17.028 8.33242H18.4883V5.83037C18.4883 5.20107 17.9764 4.68902 17.3471 4.68902H17.028ZM9.63543 9.89742H7.39258C5.90028 9.89742 4.68623 8.68337 4.68623 7.19112V5.83037C4.68623 4.33807 5.90028 3.12402 7.39258 3.12402H7.71163C9.20388 3.12402 10.4179 4.33807 10.4179 5.83037V9.11492C10.4179 9.54707 10.0676 9.89742 9.63543 9.89742ZM7.39258 4.68902C6.76323 4.68902 6.25123 5.20107 6.25123 5.83037V7.19112C6.25123 7.82042 6.76323 8.33242 7.39258 8.33242H8.85293V5.83037C8.85293 5.20107 8.34093 4.68902 7.71163 4.68902H7.39258ZM14.5834 16.6683H12.3405C10.8482 16.6683 9.63418 15.4543 9.63418 13.962V12.6013C9.63418 11.109 10.8482 9.89497 12.3405 9.89497H12.6596C14.1518 9.89497 15.3659 11.109 15.3659 12.6013V15.8858C15.3659 16.3179 15.0156 16.6683 14.5834 16.6683ZM12.3405 11.4599C11.7112 11.4599 11.1992 11.972 11.1992 12.6013V13.962C11.1992 14.5913 11.7112 15.1033 12.3405 15.1033H13.8009V12.6013C13.8009 11.972 13.2889 11.4599 12.6596 11.4599H12.3405ZM17.9688 22.9182H7.03133C6.59913 22.9182 6.24883 22.5679 6.24883 22.1357V21.6148C6.24883 19.4602 8.00173 17.7072 10.1563 17.7072H14.8438C16.9984 17.7072 18.7513 19.4602 18.7513 21.6148V22.1357C18.7513 22.5679 18.401 22.9182 17.9688 22.9182ZM7.82833 21.3532H17.1718C17.0414 20.1842 16.0471 19.2722 14.8438 19.2722H10.1563C8.95308 19.2722 7.95873 20.1842 7.82833 21.3532ZM7.55208 16.1475H2.86458C2.43238 16.1475 2.08203 15.7971 2.08203 15.365V14.8442C2.08203 12.6896 3.83493 10.9367 5.98958 10.9367H7.55208C7.98428 10.9367 8.33463 11.287 8.33463 11.7192C8.33463 12.1513 7.98428 12.5016 7.55208 12.5016H5.98958C4.78638 12.5016 3.79208 13.4136 3.66158 14.5825H7.55208C7.98428 14.5825 8.33463 14.9328 8.33463 15.365C8.33463 15.7971 7.98428 16.1475 7.55208 16.1475ZM22.1355 16.1473H17.448C17.0158 16.1473 16.6654 15.797 16.6654 15.3648C16.6654 14.9327 17.0158 14.5824 17.448 14.5824H21.3385C21.208 13.4134 20.2137 12.5015 19.0105 12.5015H17.448C17.0158 12.5015 16.6654 12.1512 16.6654 11.719C16.6654 11.2869 17.0158 10.9365 17.448 10.9365H19.0105C21.1651 10.9365 22.918 12.6894 22.918 14.844V15.3648C22.918 15.797 22.5677 16.1473 22.1355 16.1473Z"
+                              fill="#676767"
+                            />
+                          </g>
+                        </g>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_30_52663">
+                          <rect width="25" height="25" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="">
+                    <p class="text-sm text-[#676767]">座位數目</p>
+                    <p class="text-sm text-[#161616] font-bold">5</p>
+                  </div>
+                </div>
+
+                <p class="mt-[35px] font-bold text-xl">其他細節</p>
+                <hr class="mt-[15px] mb-[10px]" />
+                <div
+                  class="flex justify-between items-center py-[17px] border-b border-[#D9D9D9]"
+                >
+                  <p class="text-[#676767] text-sm">行貨／水貨</p>
+                  <p class="text-[#161616] text-sm font-bold">行貨</p>
+                </div>
+                <div
+                  class="flex justify-between items-center py-[17px] border-b border-[#D9D9D9]"
+                >
+                  <p class="text-[#676767] text-sm">傳動</p>
+                  <p class="text-[#161616] text-sm font-bold">自動波</p>
+                </div>
+                <div
+                  class="flex justify-between items-center py-[17px] border-b border-[#D9D9D9]"
+                >
+                  <p class="text-[#676767] text-sm">製造年份</p>
+                  <p class="text-[#161616] text-sm font-bold">2014</p>
+                </div>
+                <div
+                  class="flex justify-between items-center py-[17px] border-b border-[#D9D9D9]"
+                >
+                  <p class="text-[#676767] text-sm">首次登記年份</p>
+                  <p class="text-[#161616] text-sm font-bold">2014</p>
+                </div>
+                <div class="flex justify-between items-center py-[17px]">
+                  <p class="text-[#676767] text-sm">編號</p>
+                  <p class="text-[#161616] text-sm font-bold">MS0010527</p>
+                </div>
+                <button
+                  class="bg-[#fff] border-2 mt-[20px] border-[#F3A94D] w-full p-[14px] text-[#F3A94D] text-lg font-[500] rounded-[8px]"
+                >
+                  鏟除
+                </button>
+              </div>
+              <div class="card min-w-[300px] md:w-auto w-[300px] bg-white p-[24px] rounded-[10px]">
+                <img src="img/car3.png" class="w-full mb-[30px]" alt="" />
+                <p class="font-bold text-xl">主要資料</p>
+                <hr class="mt-[15px] mb-[20px]" />
+                <div class="flex gap-[14px] justify-start items-center">
+                  <div
+                    class="icon-holder w-[45px] h-[45px] rounded-[5px] border-2 border-[#F3A94D] flex justify-center items-center"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_30_52619)">
+                        <mask
+                          id="mask0_30_52619"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="0"
+                          y="0"
+                          width="25"
+                          height="25"
+                        >
+                          <path d="M0 0H25V25H0V0Z" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0_30_52619)">
+                          <mask
+                            id="mask1_30_52619"
+                            style="mask-type: luminance"
+                            maskUnits="userSpaceOnUse"
+                            x="0"
+                            y="0"
+                            width="25"
+                            height="25"
+                          >
+                            <path d="M0 0H25V25H0V0Z" fill="white" />
+                          </mask>
+                          <g mask="url(#mask1_30_52619)">
+                            <path
+                              d="M12.5102 14.0629C12.1978 14.0629 11.9374 14.1774 11.7291 14.3441L9.27113 13.688C8.84413 13.5734 8.42758 13.8234 8.31298 14.24C8.19843 14.6566 8.44838 15.0836 8.86498 15.1981L11.3125 15.8543C11.5104 16.3334 11.9791 16.6667 12.5207 16.6667C13.2393 16.6667 13.8225 16.0834 13.8225 15.3648C13.8225 14.6461 13.2289 14.0629 12.5102 14.0629Z"
+                              fill="#676767"
+                            />
+                            <path
+                              d="M22.3411 12.7398C22.3307 12.7085 22.3203 12.6981 22.3099 12.6669C20.8622 8.62587 17.0191 5.73047 12.4989 5.73047C7.95803 5.73047 4.10448 8.65712 2.67763 12.7085C2.67763 12.719 2.66723 12.719 2.66723 12.7294V12.7398C2.29223 13.8125 2.08398 14.9582 2.08398 16.1455V19.0096C2.08398 19.4366 2.43808 19.7907 2.86508 19.7907H22.1329C22.5599 19.7907 22.914 19.4366 22.914 19.0096V16.1455C22.914 14.9582 22.7057 13.823 22.3412 12.771V12.7398H22.3411ZM21.3517 18.2285H3.64623V16.1455C3.64623 15.3644 3.76078 14.6145 3.94823 13.8855L5.01058 14.1666C5.07308 14.1875 5.14598 14.1979 5.20848 14.1979C5.55218 14.1979 5.86463 13.9688 5.95838 13.6147C6.07288 13.1981 5.82298 12.771 5.40638 12.6565L4.47938 12.4169C5.79173 9.62572 8.51003 7.61562 11.7179 7.33442V8.66752C11.7179 9.09452 12.072 9.44867 12.499 9.44867C12.926 9.44867 13.2801 9.09452 13.2801 8.66752V7.34482C16.4879 7.62602 19.2062 9.63612 20.5081 12.4273L19.5812 12.6773C19.1646 12.7918 18.9146 13.2189 19.0292 13.6355C19.1229 13.9896 19.4354 14.2187 19.7791 14.2187C19.8416 14.2187 19.9145 14.2083 19.9769 14.1875L21.0289 13.9063C21.2163 14.6249 21.3309 15.3852 21.3309 16.1663V18.2285H21.3517Z"
+                              fill="#676767"
+                            />
+                          </g>
+                        </g>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_30_52619">
+                          <rect width="25" height="25" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="">
+                    <p class="text-sm text-[#676767]">里程数</p>
+                    <p class="text-sm text-[#161616] font-bold">18,000 KM</p>
+                  </div>
+                </div>
+                <div
+                  class="flex mt-[20px] gap-[14px] justify-start items-center"
+                >
+                  <div
+                    class="icon-holder w-[45px] h-[45px] rounded-[5px] border-2 border-[#F3A94D] flex justify-center items-center"
+                  >
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <mask
+                        id="mask0_30_52631"
+                        style="mask-type: luminance"
+                        maskUnits="userSpaceOnUse"
+                        x="0"
+                        y="0"
+                        width="25"
+                        height="25"
+                      >
+                        <path d="M0 0H25V25H0V0Z" fill="white" />
+                      </mask>
+                      <g mask="url(#mask0_30_52631)">
+                        <path
+                          d="M20.0533 4.16796H17.4495V2.86606C17.4495 2.43906 17.0954 2.08496 16.6684 2.08496C16.2414 2.08496 15.8873 2.43906 15.8873 2.86606V4.16796H9.11751V2.86606C9.11751 2.43906 8.76341 2.08496 8.33641 2.08496C7.90941 2.08496 7.55526 2.43906 7.55526 2.86606V4.16796H4.95151C3.95171 4.16796 3.12891 4.99076 3.12891 5.99056V20.0509C3.12891 21.0507 3.95171 21.8735 4.95151 21.8735H20.0533C21.0532 21.8735 21.876 21.0507 21.876 20.0509V5.99056C21.876 4.99076 21.0532 4.16796 20.0533 4.16796ZM4.95146 5.73021H20.0533C20.1992 5.73021 20.3137 5.84476 20.3137 5.99056V8.33396H4.69116V5.99056C4.69116 5.84476 4.80566 5.73021 4.95146 5.73021ZM20.0532 20.3112H4.95151C4.80571 20.3112 4.69116 20.1967 4.69116 20.0508V9.89621H20.3137V20.0508C20.3137 20.1967 20.1991 20.3112 20.0533 20.3112H20.0532Z"
+                          fill="#676767"
+                        />
+                        <path
+                          d="M8.33642 12.5008C7.76362 12.5008 7.29492 12.9694 7.29492 13.5423C7.29492 14.1151 7.76362 14.5838 8.33642 14.5838H8.34682C8.91967 14.5838 9.38832 14.1151 9.38832 13.5423C9.37792 12.9694 8.90927 12.5008 8.33642 12.5008ZM12.5024 12.5008C11.9192 12.5008 11.4609 12.9694 11.4609 13.5423C11.4609 14.1151 11.9296 14.5838 12.5024 14.5838C13.0752 14.5838 13.5439 14.1151 13.5439 13.5423C13.5439 12.9694 13.0857 12.5008 12.5024 12.5008ZM16.6684 12.5008C16.0852 12.5008 15.6269 12.9694 15.6269 13.5423C15.6269 14.1151 16.0956 14.5838 16.6684 14.5838C17.2412 14.5838 17.7099 14.1151 17.7099 13.5423C17.7099 12.9694 17.2412 12.5008 16.6684 12.5008ZM8.33642 16.146C7.76362 16.146 7.29492 16.6147 7.29492 17.1875C7.29492 17.7603 7.76362 18.229 8.33642 18.229H8.34682C8.91967 18.229 9.38832 17.7603 9.38832 17.1875C9.37792 16.6147 8.90927 16.146 8.33642 16.146ZM12.5024 16.146C11.9192 16.146 11.4609 16.6147 11.4609 17.1875C11.4609 17.7603 11.9296 18.229 12.5024 18.229C13.0752 18.229 13.5439 17.7603 13.5439 17.1875C13.5439 16.6147 13.0857 16.146 12.5024 16.146Z"
+                          fill="#676767"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="">
+                    <p class="text-sm text-[#676767]">註冊日期</p>
+                    <p class="text-sm text-[#161616] font-bold">2019-12-22</p>
+                  </div>
+                </div>
+                <div
+                  class="flex mt-[20px] gap-[14px] justify-start items-center"
+                >
+                  <div
+                    class="icon-holder w-[45px] h-[45px] rounded-[5px] border-2 border-[#F3A94D] flex justify-center items-center"
+                  >
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_30_52648)">
+                        <mask
+                          id="mask0_30_52648"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="0"
+                          y="0"
+                          width="25"
+                          height="25"
+                        >
+                          <path d="M0 0H25V25H0V0Z" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0_30_52648)">
+                          <mask
+                            id="mask1_30_52648"
+                            style="mask-type: luminance"
+                            maskUnits="userSpaceOnUse"
+                            x="0"
+                            y="0"
+                            width="25"
+                            height="25"
+                          >
+                            <path d="M0 0H25V25H0V0Z" fill="white" />
+                          </mask>
+                          <g mask="url(#mask1_30_52648)">
+                            <path
+                              d="M21.4843 4.19636C21.3648 4.12786 21.2293 4.09211 21.0916 4.09272C20.9538 4.09334 20.8186 4.13029 20.6998 4.19986C18.1264 5.70651 15.5008 4.93786 12.7211 4.12421C9.74515 3.25306 6.66795 2.35226 3.51215 4.19986C3.3943 4.26885 3.29657 4.36749 3.22865 4.48596C3.16073 4.60442 3.125 4.7386 3.125 4.87516V21.0945C3.125 21.5267 3.4753 21.877 3.9075 21.877C4.3397 21.877 4.69 21.5267 4.69 21.0945V16.3521C7.1397 15.1322 9.641 15.8643 12.2815 16.6371C13.9801 17.1344 15.7114 17.6412 17.4718 17.6412C18.7956 17.6412 20.136 17.3544 21.4905 16.5614C21.6083 16.4924 21.706 16.3938 21.774 16.2753C21.8419 16.1569 21.8776 16.0227 21.8776 15.8862V4.87516C21.8776 4.73741 21.8412 4.6021 21.7722 4.48291C21.7031 4.36372 21.6038 4.26487 21.4843 4.19636ZM20.3126 15.4205C17.863 16.6402 15.3616 15.9081 12.7211 15.1352C11.0224 14.6379 9.29125 14.1311 7.5308 14.1311C6.59205 14.1311 5.6445 14.2755 4.69 14.6422V5.34086C7.13955 4.12106 9.641 4.85326 12.2815 5.62616C14.8859 6.38856 17.5681 7.17346 20.3126 6.11916V15.4205Z"
+                              fill="#676767"
+                            />
+                          </g>
+                        </g>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_30_52648">
+                          <rect width="25" height="25" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="">
+                    <p class="text-sm text-[#676767]">前車主數量</p>
+                    <p class="text-sm text-[#161616] font-bold">2</p>
+                  </div>
+                </div>
+                <div
+                  class="flex mt-[20px] gap-[14px] justify-start items-center"
+                >
+                  <div
+                    class="icon-holder w-[45px] h-[45px] rounded-[5px] border-2 border-[#F3A94D] flex justify-center items-center"
+                  >
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_30_52663)">
+                        <mask
+                          id="mask0_30_52663"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="0"
+                          y="0"
+                          width="25"
+                          height="25"
+                        >
+                          <path d="M0 0H25V25H0V0Z" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0_30_52663)">
+                          <mask
+                            id="mask1_30_52663"
+                            style="mask-type: luminance"
+                            maskUnits="userSpaceOnUse"
+                            x="0"
+                            y="0"
+                            width="25"
+                            height="25"
+                          >
+                            <path d="M0 0H25V25H0V0Z" fill="white" />
+                          </mask>
+                          <g mask="url(#mask1_30_52663)">
+                            <path
+                              d="M19.2709 9.89742H17.028C15.5357 9.89742 14.3217 8.68337 14.3217 7.19112V5.83037C14.3217 4.33807 15.5357 3.12402 17.028 3.12402H17.3471C18.8394 3.12402 20.0534 4.33807 20.0534 5.83037V9.11492C20.0534 9.54707 19.7031 9.89742 19.2709 9.89742ZM17.028 4.68902C16.3987 4.68902 15.8867 5.20107 15.8867 5.83037V7.19112C15.8867 7.82042 16.3987 8.33242 17.028 8.33242H18.4883V5.83037C18.4883 5.20107 17.9764 4.68902 17.3471 4.68902H17.028ZM9.63543 9.89742H7.39258C5.90028 9.89742 4.68623 8.68337 4.68623 7.19112V5.83037C4.68623 4.33807 5.90028 3.12402 7.39258 3.12402H7.71163C9.20388 3.12402 10.4179 4.33807 10.4179 5.83037V9.11492C10.4179 9.54707 10.0676 9.89742 9.63543 9.89742ZM7.39258 4.68902C6.76323 4.68902 6.25123 5.20107 6.25123 5.83037V7.19112C6.25123 7.82042 6.76323 8.33242 7.39258 8.33242H8.85293V5.83037C8.85293 5.20107 8.34093 4.68902 7.71163 4.68902H7.39258ZM14.5834 16.6683H12.3405C10.8482 16.6683 9.63418 15.4543 9.63418 13.962V12.6013C9.63418 11.109 10.8482 9.89497 12.3405 9.89497H12.6596C14.1518 9.89497 15.3659 11.109 15.3659 12.6013V15.8858C15.3659 16.3179 15.0156 16.6683 14.5834 16.6683ZM12.3405 11.4599C11.7112 11.4599 11.1992 11.972 11.1992 12.6013V13.962C11.1992 14.5913 11.7112 15.1033 12.3405 15.1033H13.8009V12.6013C13.8009 11.972 13.2889 11.4599 12.6596 11.4599H12.3405ZM17.9688 22.9182H7.03133C6.59913 22.9182 6.24883 22.5679 6.24883 22.1357V21.6148C6.24883 19.4602 8.00173 17.7072 10.1563 17.7072H14.8438C16.9984 17.7072 18.7513 19.4602 18.7513 21.6148V22.1357C18.7513 22.5679 18.401 22.9182 17.9688 22.9182ZM7.82833 21.3532H17.1718C17.0414 20.1842 16.0471 19.2722 14.8438 19.2722H10.1563C8.95308 19.2722 7.95873 20.1842 7.82833 21.3532ZM7.55208 16.1475H2.86458C2.43238 16.1475 2.08203 15.7971 2.08203 15.365V14.8442C2.08203 12.6896 3.83493 10.9367 5.98958 10.9367H7.55208C7.98428 10.9367 8.33463 11.287 8.33463 11.7192C8.33463 12.1513 7.98428 12.5016 7.55208 12.5016H5.98958C4.78638 12.5016 3.79208 13.4136 3.66158 14.5825H7.55208C7.98428 14.5825 8.33463 14.9328 8.33463 15.365C8.33463 15.7971 7.98428 16.1475 7.55208 16.1475ZM22.1355 16.1473H17.448C17.0158 16.1473 16.6654 15.797 16.6654 15.3648C16.6654 14.9327 17.0158 14.5824 17.448 14.5824H21.3385C21.208 13.4134 20.2137 12.5015 19.0105 12.5015H17.448C17.0158 12.5015 16.6654 12.1512 16.6654 11.719C16.6654 11.2869 17.0158 10.9365 17.448 10.9365H19.0105C21.1651 10.9365 22.918 12.6894 22.918 14.844V15.3648C22.918 15.797 22.5677 16.1473 22.1355 16.1473Z"
+                              fill="#676767"
+                            />
+                          </g>
+                        </g>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_30_52663">
+                          <rect width="25" height="25" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="">
+                    <p class="text-sm text-[#676767]">座位數目</p>
+                    <p class="text-sm text-[#161616] font-bold">5</p>
+                  </div>
+                </div>
+
+                <p class="mt-[35px] font-bold text-xl">其他細節</p>
+                <hr class="mt-[15px] mb-[10px]" />
+                <div
+                  class="flex justify-between items-center py-[17px] border-b border-[#D9D9D9]"
+                >
+                  <p class="text-[#676767] text-sm">行貨／水貨</p>
+                  <p class="text-[#161616] text-sm font-bold">行貨</p>
+                </div>
+                <div
+                  class="flex justify-between items-center py-[17px] border-b border-[#D9D9D9]"
+                >
+                  <p class="text-[#676767] text-sm">傳動</p>
+                  <p class="text-[#161616] text-sm font-bold">自動波</p>
+                </div>
+                <div
+                  class="flex justify-between items-center py-[17px] border-b border-[#D9D9D9]"
+                >
+                  <p class="text-[#676767] text-sm">製造年份</p>
+                  <p class="text-[#161616] text-sm font-bold">2014</p>
+                </div>
+                <div
+                  class="flex justify-between items-center py-[17px] border-b border-[#D9D9D9]"
+                >
+                  <p class="text-[#676767] text-sm">首次登記年份</p>
+                  <p class="text-[#161616] text-sm font-bold">2014</p>
+                </div>
+                <div class="flex justify-between items-center py-[17px]">
+                  <p class="text-[#676767] text-sm">編號</p>
+                  <p class="text-[#161616] text-sm font-bold">MS0010527</p>
+                </div>
+                <button
+                  class="bg-[#fff] border-2 mt-[20px] border-[#F3A94D] w-full p-[14px] text-[#F3A94D] text-lg font-[500] rounded-[8px]"
+                >
+                  鏟除
+                </button>
+              </div>
+              <div class="card min-w-[300px] md:w-auto w-[300px] bg-white p-[24px] rounded-[10px]">
+                <img src="img/car4.png" class="w-full mb-[30px]" alt="" />
+                <p class="font-bold text-xl">主要資料</p>
+                <hr class="mt-[15px] mb-[20px]" />
+                <div class="flex gap-[14px] justify-start items-center">
+                  <div
+                    class="icon-holder w-[45px] h-[45px] rounded-[5px] border-2 border-[#F3A94D] flex justify-center items-center"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_30_52619)">
+                        <mask
+                          id="mask0_30_52619"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="0"
+                          y="0"
+                          width="25"
+                          height="25"
+                        >
+                          <path d="M0 0H25V25H0V0Z" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0_30_52619)">
+                          <mask
+                            id="mask1_30_52619"
+                            style="mask-type: luminance"
+                            maskUnits="userSpaceOnUse"
+                            x="0"
+                            y="0"
+                            width="25"
+                            height="25"
+                          >
+                            <path d="M0 0H25V25H0V0Z" fill="white" />
+                          </mask>
+                          <g mask="url(#mask1_30_52619)">
+                            <path
+                              d="M12.5102 14.0629C12.1978 14.0629 11.9374 14.1774 11.7291 14.3441L9.27113 13.688C8.84413 13.5734 8.42758 13.8234 8.31298 14.24C8.19843 14.6566 8.44838 15.0836 8.86498 15.1981L11.3125 15.8543C11.5104 16.3334 11.9791 16.6667 12.5207 16.6667C13.2393 16.6667 13.8225 16.0834 13.8225 15.3648C13.8225 14.6461 13.2289 14.0629 12.5102 14.0629Z"
+                              fill="#676767"
+                            />
+                            <path
+                              d="M22.3411 12.7398C22.3307 12.7085 22.3203 12.6981 22.3099 12.6669C20.8622 8.62587 17.0191 5.73047 12.4989 5.73047C7.95803 5.73047 4.10448 8.65712 2.67763 12.7085C2.67763 12.719 2.66723 12.719 2.66723 12.7294V12.7398C2.29223 13.8125 2.08398 14.9582 2.08398 16.1455V19.0096C2.08398 19.4366 2.43808 19.7907 2.86508 19.7907H22.1329C22.5599 19.7907 22.914 19.4366 22.914 19.0096V16.1455C22.914 14.9582 22.7057 13.823 22.3412 12.771V12.7398H22.3411ZM21.3517 18.2285H3.64623V16.1455C3.64623 15.3644 3.76078 14.6145 3.94823 13.8855L5.01058 14.1666C5.07308 14.1875 5.14598 14.1979 5.20848 14.1979C5.55218 14.1979 5.86463 13.9688 5.95838 13.6147C6.07288 13.1981 5.82298 12.771 5.40638 12.6565L4.47938 12.4169C5.79173 9.62572 8.51003 7.61562 11.7179 7.33442V8.66752C11.7179 9.09452 12.072 9.44867 12.499 9.44867C12.926 9.44867 13.2801 9.09452 13.2801 8.66752V7.34482C16.4879 7.62602 19.2062 9.63612 20.5081 12.4273L19.5812 12.6773C19.1646 12.7918 18.9146 13.2189 19.0292 13.6355C19.1229 13.9896 19.4354 14.2187 19.7791 14.2187C19.8416 14.2187 19.9145 14.2083 19.9769 14.1875L21.0289 13.9063C21.2163 14.6249 21.3309 15.3852 21.3309 16.1663V18.2285H21.3517Z"
+                              fill="#676767"
+                            />
+                          </g>
+                        </g>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_30_52619">
+                          <rect width="25" height="25" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="">
+                    <p class="text-sm text-[#676767]">里程数</p>
+                    <p class="text-sm text-[#161616] font-bold">18,000 KM</p>
+                  </div>
+                </div>
+                <div
+                  class="flex mt-[20px] gap-[14px] justify-start items-center"
+                >
+                  <div
+                    class="icon-holder w-[45px] h-[45px] rounded-[5px] border-2 border-[#F3A94D] flex justify-center items-center"
+                  >
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <mask
+                        id="mask0_30_52631"
+                        style="mask-type: luminance"
+                        maskUnits="userSpaceOnUse"
+                        x="0"
+                        y="0"
+                        width="25"
+                        height="25"
+                      >
+                        <path d="M0 0H25V25H0V0Z" fill="white" />
+                      </mask>
+                      <g mask="url(#mask0_30_52631)">
+                        <path
+                          d="M20.0533 4.16796H17.4495V2.86606C17.4495 2.43906 17.0954 2.08496 16.6684 2.08496C16.2414 2.08496 15.8873 2.43906 15.8873 2.86606V4.16796H9.11751V2.86606C9.11751 2.43906 8.76341 2.08496 8.33641 2.08496C7.90941 2.08496 7.55526 2.43906 7.55526 2.86606V4.16796H4.95151C3.95171 4.16796 3.12891 4.99076 3.12891 5.99056V20.0509C3.12891 21.0507 3.95171 21.8735 4.95151 21.8735H20.0533C21.0532 21.8735 21.876 21.0507 21.876 20.0509V5.99056C21.876 4.99076 21.0532 4.16796 20.0533 4.16796ZM4.95146 5.73021H20.0533C20.1992 5.73021 20.3137 5.84476 20.3137 5.99056V8.33396H4.69116V5.99056C4.69116 5.84476 4.80566 5.73021 4.95146 5.73021ZM20.0532 20.3112H4.95151C4.80571 20.3112 4.69116 20.1967 4.69116 20.0508V9.89621H20.3137V20.0508C20.3137 20.1967 20.1991 20.3112 20.0533 20.3112H20.0532Z"
+                          fill="#676767"
+                        />
+                        <path
+                          d="M8.33642 12.5008C7.76362 12.5008 7.29492 12.9694 7.29492 13.5423C7.29492 14.1151 7.76362 14.5838 8.33642 14.5838H8.34682C8.91967 14.5838 9.38832 14.1151 9.38832 13.5423C9.37792 12.9694 8.90927 12.5008 8.33642 12.5008ZM12.5024 12.5008C11.9192 12.5008 11.4609 12.9694 11.4609 13.5423C11.4609 14.1151 11.9296 14.5838 12.5024 14.5838C13.0752 14.5838 13.5439 14.1151 13.5439 13.5423C13.5439 12.9694 13.0857 12.5008 12.5024 12.5008ZM16.6684 12.5008C16.0852 12.5008 15.6269 12.9694 15.6269 13.5423C15.6269 14.1151 16.0956 14.5838 16.6684 14.5838C17.2412 14.5838 17.7099 14.1151 17.7099 13.5423C17.7099 12.9694 17.2412 12.5008 16.6684 12.5008ZM8.33642 16.146C7.76362 16.146 7.29492 16.6147 7.29492 17.1875C7.29492 17.7603 7.76362 18.229 8.33642 18.229H8.34682C8.91967 18.229 9.38832 17.7603 9.38832 17.1875C9.37792 16.6147 8.90927 16.146 8.33642 16.146ZM12.5024 16.146C11.9192 16.146 11.4609 16.6147 11.4609 17.1875C11.4609 17.7603 11.9296 18.229 12.5024 18.229C13.0752 18.229 13.5439 17.7603 13.5439 17.1875C13.5439 16.6147 13.0857 16.146 12.5024 16.146Z"
+                          fill="#676767"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="">
+                    <p class="text-sm text-[#676767]">註冊日期</p>
+                    <p class="text-sm text-[#161616] font-bold">2019-12-22</p>
+                  </div>
+                </div>
+                <div
+                  class="flex mt-[20px] gap-[14px] justify-start items-center"
+                >
+                  <div
+                    class="icon-holder w-[45px] h-[45px] rounded-[5px] border-2 border-[#F3A94D] flex justify-center items-center"
+                  >
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_30_52648)">
+                        <mask
+                          id="mask0_30_52648"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="0"
+                          y="0"
+                          width="25"
+                          height="25"
+                        >
+                          <path d="M0 0H25V25H0V0Z" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0_30_52648)">
+                          <mask
+                            id="mask1_30_52648"
+                            style="mask-type: luminance"
+                            maskUnits="userSpaceOnUse"
+                            x="0"
+                            y="0"
+                            width="25"
+                            height="25"
+                          >
+                            <path d="M0 0H25V25H0V0Z" fill="white" />
+                          </mask>
+                          <g mask="url(#mask1_30_52648)">
+                            <path
+                              d="M21.4843 4.19636C21.3648 4.12786 21.2293 4.09211 21.0916 4.09272C20.9538 4.09334 20.8186 4.13029 20.6998 4.19986C18.1264 5.70651 15.5008 4.93786 12.7211 4.12421C9.74515 3.25306 6.66795 2.35226 3.51215 4.19986C3.3943 4.26885 3.29657 4.36749 3.22865 4.48596C3.16073 4.60442 3.125 4.7386 3.125 4.87516V21.0945C3.125 21.5267 3.4753 21.877 3.9075 21.877C4.3397 21.877 4.69 21.5267 4.69 21.0945V16.3521C7.1397 15.1322 9.641 15.8643 12.2815 16.6371C13.9801 17.1344 15.7114 17.6412 17.4718 17.6412C18.7956 17.6412 20.136 17.3544 21.4905 16.5614C21.6083 16.4924 21.706 16.3938 21.774 16.2753C21.8419 16.1569 21.8776 16.0227 21.8776 15.8862V4.87516C21.8776 4.73741 21.8412 4.6021 21.7722 4.48291C21.7031 4.36372 21.6038 4.26487 21.4843 4.19636ZM20.3126 15.4205C17.863 16.6402 15.3616 15.9081 12.7211 15.1352C11.0224 14.6379 9.29125 14.1311 7.5308 14.1311C6.59205 14.1311 5.6445 14.2755 4.69 14.6422V5.34086C7.13955 4.12106 9.641 4.85326 12.2815 5.62616C14.8859 6.38856 17.5681 7.17346 20.3126 6.11916V15.4205Z"
+                              fill="#676767"
+                            />
+                          </g>
+                        </g>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_30_52648">
+                          <rect width="25" height="25" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="">
+                    <p class="text-sm text-[#676767]">前車主數量</p>
+                    <p class="text-sm text-[#161616] font-bold">2</p>
+                  </div>
+                </div>
+                <div
+                  class="flex mt-[20px] gap-[14px] justify-start items-center"
+                >
+                  <div
+                    class="icon-holder w-[45px] h-[45px] rounded-[5px] border-2 border-[#F3A94D] flex justify-center items-center"
+                  >
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_30_52663)">
+                        <mask
+                          id="mask0_30_52663"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="0"
+                          y="0"
+                          width="25"
+                          height="25"
+                        >
+                          <path d="M0 0H25V25H0V0Z" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0_30_52663)">
+                          <mask
+                            id="mask1_30_52663"
+                            style="mask-type: luminance"
+                            maskUnits="userSpaceOnUse"
+                            x="0"
+                            y="0"
+                            width="25"
+                            height="25"
+                          >
+                            <path d="M0 0H25V25H0V0Z" fill="white" />
+                          </mask>
+                          <g mask="url(#mask1_30_52663)">
+                            <path
+                              d="M19.2709 9.89742H17.028C15.5357 9.89742 14.3217 8.68337 14.3217 7.19112V5.83037C14.3217 4.33807 15.5357 3.12402 17.028 3.12402H17.3471C18.8394 3.12402 20.0534 4.33807 20.0534 5.83037V9.11492C20.0534 9.54707 19.7031 9.89742 19.2709 9.89742ZM17.028 4.68902C16.3987 4.68902 15.8867 5.20107 15.8867 5.83037V7.19112C15.8867 7.82042 16.3987 8.33242 17.028 8.33242H18.4883V5.83037C18.4883 5.20107 17.9764 4.68902 17.3471 4.68902H17.028ZM9.63543 9.89742H7.39258C5.90028 9.89742 4.68623 8.68337 4.68623 7.19112V5.83037C4.68623 4.33807 5.90028 3.12402 7.39258 3.12402H7.71163C9.20388 3.12402 10.4179 4.33807 10.4179 5.83037V9.11492C10.4179 9.54707 10.0676 9.89742 9.63543 9.89742ZM7.39258 4.68902C6.76323 4.68902 6.25123 5.20107 6.25123 5.83037V7.19112C6.25123 7.82042 6.76323 8.33242 7.39258 8.33242H8.85293V5.83037C8.85293 5.20107 8.34093 4.68902 7.71163 4.68902H7.39258ZM14.5834 16.6683H12.3405C10.8482 16.6683 9.63418 15.4543 9.63418 13.962V12.6013C9.63418 11.109 10.8482 9.89497 12.3405 9.89497H12.6596C14.1518 9.89497 15.3659 11.109 15.3659 12.6013V15.8858C15.3659 16.3179 15.0156 16.6683 14.5834 16.6683ZM12.3405 11.4599C11.7112 11.4599 11.1992 11.972 11.1992 12.6013V13.962C11.1992 14.5913 11.7112 15.1033 12.3405 15.1033H13.8009V12.6013C13.8009 11.972 13.2889 11.4599 12.6596 11.4599H12.3405ZM17.9688 22.9182H7.03133C6.59913 22.9182 6.24883 22.5679 6.24883 22.1357V21.6148C6.24883 19.4602 8.00173 17.7072 10.1563 17.7072H14.8438C16.9984 17.7072 18.7513 19.4602 18.7513 21.6148V22.1357C18.7513 22.5679 18.401 22.9182 17.9688 22.9182ZM7.82833 21.3532H17.1718C17.0414 20.1842 16.0471 19.2722 14.8438 19.2722H10.1563C8.95308 19.2722 7.95873 20.1842 7.82833 21.3532ZM7.55208 16.1475H2.86458C2.43238 16.1475 2.08203 15.7971 2.08203 15.365V14.8442C2.08203 12.6896 3.83493 10.9367 5.98958 10.9367H7.55208C7.98428 10.9367 8.33463 11.287 8.33463 11.7192C8.33463 12.1513 7.98428 12.5016 7.55208 12.5016H5.98958C4.78638 12.5016 3.79208 13.4136 3.66158 14.5825H7.55208C7.98428 14.5825 8.33463 14.9328 8.33463 15.365C8.33463 15.7971 7.98428 16.1475 7.55208 16.1475ZM22.1355 16.1473H17.448C17.0158 16.1473 16.6654 15.797 16.6654 15.3648C16.6654 14.9327 17.0158 14.5824 17.448 14.5824H21.3385C21.208 13.4134 20.2137 12.5015 19.0105 12.5015H17.448C17.0158 12.5015 16.6654 12.1512 16.6654 11.719C16.6654 11.2869 17.0158 10.9365 17.448 10.9365H19.0105C21.1651 10.9365 22.918 12.6894 22.918 14.844V15.3648C22.918 15.797 22.5677 16.1473 22.1355 16.1473Z"
+                              fill="#676767"
+                            />
+                          </g>
+                        </g>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_30_52663">
+                          <rect width="25" height="25" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="">
+                    <p class="text-sm text-[#676767]">座位數目</p>
+                    <p class="text-sm text-[#161616] font-bold">5</p>
+                  </div>
+                </div>
+
+                <p class="mt-[35px] font-bold text-xl">其他細節</p>
+                <hr class="mt-[15px] mb-[10px]" />
+                <div
+                  class="flex justify-between items-center py-[17px] border-b border-[#D9D9D9]"
+                >
+                  <p class="text-[#676767] text-sm">行貨／水貨</p>
+                  <p class="text-[#161616] text-sm font-bold">行貨</p>
+                </div>
+                <div
+                  class="flex justify-between items-center py-[17px] border-b border-[#D9D9D9]"
+                >
+                  <p class="text-[#676767] text-sm">傳動</p>
+                  <p class="text-[#161616] text-sm font-bold">自動波</p>
+                </div>
+                <div
+                  class="flex justify-between items-center py-[17px] border-b border-[#D9D9D9]"
+                >
+                  <p class="text-[#676767] text-sm">製造年份</p>
+                  <p class="text-[#161616] text-sm font-bold">2014</p>
+                </div>
+                <div
+                  class="flex justify-between items-center py-[17px] border-b border-[#D9D9D9]"
+                >
+                  <p class="text-[#676767] text-sm">首次登記年份</p>
+                  <p class="text-[#161616] text-sm font-bold">2014</p>
+                </div>
+                <div class="flex justify-between items-center py-[17px]">
+                  <p class="text-[#676767] text-sm">編號</p>
+                  <p class="text-[#161616] text-sm font-bold">MS0010527</p>
+                </div>
+                <button
+                  class="bg-[#fff] border-2 mt-[20px] border-[#F3A94D] w-full p-[14px] text-[#F3A94D] text-lg font-[500] rounded-[8px]"
+                >
+                  鏟除
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- comparison -->
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-[#161616] pt-[50px] pb-[20px]">
+      <div class="container">
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-40px">
+          <div class="item">
+            <a href="">
+              <img src="img/coreharry.svg" class="mb-[35px] mt-[5px]" alt="" />
+            </a>
+            <a
+              href=""
+              class="flex items-center text-white mb-[10px] gap-[10px]"
+            >
+              <i class="fa fa-envelope text-[#F3A94D]"></i>
+              <span>carhero@gmail.com</span>
+            </a>
+            <a
+              href=""
+              class="flex items-center text-white mb-[10px] gap-[10px]"
+            >
+              <i class="fa fa-envelope text-[#F3A94D]"></i>
+              <span> (+852) 2324 3242 </span>
+            </a>
+          </div>
+
+          <div class="item">
+            <p class="text-2xl font-bold text-white mb-[25px]">Quick Links</p>
+            <ul>
+              <li class="mb-3">
+                <a href="" class="text-white ferid-reserve mavesound">
+                  車盤列表
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li class="mb-3">
+                <a href="" class="text-white ferid-reserve"> 刊登車盤 </a>
+              </li>
+            </ul>
+            <ul class="mb-3">
+              <li>
+                <a href="" class="text-white ferid-reserve"> 我的帳戶 </a>
+              </li>
+            </ul>
+          </div>
+          <div class="item">
+            <p class="text-2xl font-bold text-white mb-[25px]">關於我們</p>
+            <ul>
+              <li class="mb-3">
+                <a href="" class="text-white ferid-reserve mavesound">
+                  車盤列表
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li class="mb-3">
+                <a href="" class="text-white ferid-reserve"> 刊登車盤 </a>
+              </li>
+            </ul>
+            <ul class="mb-3">
+              <li>
+                <a href="" class="text-white ferid-reserve"> 我的帳戶 </a>
+              </li>
+            </ul>
+          </div>
+          <div class="item">
+            <p class="text-2xl font-bold text-white mb-[25px]">搜索網站</p>
+
+            <form
+              action=""
+              class="mb-3 bg-white px-[20px] py-[12px] rounded-[5px] flex justify-between items-center"
+            >
+              <input
+                type="text"
+                placeholder="Search here..."
+                class="w-full"
+                name=""
+                id=""
+              />
+              <i class="fa fa-search text-[#F3A94D]"></i>
+            </form>
+
+            <div class="flex social mt-8 justify-start items-center gap-[14px]">
+              <a
+                href=""
+                class="icon inline-flex w-[50px] h-[50px] justify-center items-center bg-[#F3A94D] rounded-[5px]"
+              >
+                <i class="fab fa-facebook-f text-white text-2xl"></i>
+              </a>
+              <a
+                href=""
+                class="icon inline-flex w-[50px] h-[50px] justify-center items-center bg-[#F3A94D] rounded-[5px]"
+              >
+                <i class="fab fa-instagram text-white text-2xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="mt-[150px]" />
+
+        <div class="flex sm-text mt-3 justify-between items-center">
+          <div class="flex justify-start items-center gap-[10px]">
+            <a href="" class="text-white"> English </a>
+            <a href="" class="text-white"> | </a>
+            <a href="" class="text-white"> Chinese </a>
+          </div>
+          <p class="text-white">© 2022 CarHero All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- alpine -->
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+
+    <!-- app js -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
