@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarHero</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="navbar py-[20px]">
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <div class="burger md:hidden block">
+                    <button class="menu-toggler" id="toggler">
+                        <i class="fa fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                <div class="left flex justify-start items-center gap-[48px]">
+                    <a href="">
+                        <img src="img/logo.png" class="logo" alt="" />
+                    </a>
+                    <div class="menu-bg" id="menu-bg"></div>
+                    <div id="menu" class="menu flex justify-start items-center gap-[40px]">
+                        <a href="" class="text-black"> 首頁 </a>
+                        <a href="" class="text-black"> 車盤列表 </a>
+                        <a href="" class="text-black"> 車盤列表 </a>
+                        <a href="" class="text-black"> 出售 </a>
+                        <a href="" class="text-black"> 購買 </a>
+                        <a href="" class="text-black"> 使用者中心 </a>
+                    </div>
+                </div>
+
+                <div class="right flex justify-end items-center gap-[40px]">
+                    <div class="group inline-block relative">
+                        <button
+                            class="bg-gray-300 rounded-[50px] text-gray-700 font-semibold py-2 pl-[15px] rounded inline-flex gap-[14px] items-center border bg-white py-[3px] pr-[3px]">
+                            <i class="fa fa-bars"></i>
+                            <img src="img/avatar.png" alt="">
+                            </svg>
+                        </button>
+                        <ul class="absolute hidden text-gray-700 pt-1 group-hover:block dropdown-items">
+                            <li class="">
+                                <a class="rounded-t hover:bg-[#ECECEC] py-2 px-4 block whitespace-no-wrap"
+                                    href="#">我的收藏</a>
+                            </li>
+                            <li class="">
+                                <a class="rounded-t hover:bg-[#ECECEC] py-2 px-4 block whitespace-no-wrap"
+                                    href="#">瀏覽歷史</a>
+                            </li>
+                            <li class="">
+                                <a class=" hover:bg-[#ECECEC] py-2 px-4 block whitespace-no-wrap" href="#">出售清單</a>
+                            </li>
+                            <li>
+                                <hr>
+                            </li>
+                            <li class="">
+                                <a class="rounded-b hover:bg-[#ECECEC] py-2 px-4 block whitespace-no-wrap"
+                                    href="#">出售清單</a>
+                            </li>
+                            <li>
+                                <hr>
+                            </li>
+                            <li class="">
+                                <a class="rounded-b hover:bg-[#ECECEC] py-2 px-4 block whitespace-no-wrap"
+                                    href="#">我的帳戶</a>
+                            </li>
+                            <li>
+                                <hr>
+                            </li>
+                            <li class="">
+                                <a class="rounded-b hover:bg-[#ECECEC] py-2 px-4 block whitespace-no-wrap"
+                                    href="#">常見問題</a>
+                            </li>
+                            <li class="">
+                                <a class="rounded-b hover:bg-[#ECECEC] py-2 px-4 block whitespace-no-wrap"
+                                    href="#">登出</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar -->
+
+    <!-- listing-hero -->
+    <section class="listing-hero py-[100px]">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="text-[40px] text-white">車盤列表</h2>
+            </div>
+        </div>
+    </section>
+    <!-- listing-hero -->
+
+    <!-- post listing -->
+    <section class="post-listing py-[30px] bg-[#f5f5f7]">
+        <div class="container">
+            <form action="" class="flex md:flex-row flex-col justify-between items-start gap-[25px]">
+                <div class="md:w-5/12 w-full">
+                    <div class="card mb-[30px] bg-white p-[24px] rounded-[10px]">
+                        <input type="file" class="hidden" name="" id="car-pic">
+                        <label for="car-pic"
+                            class="border-2 cursor-pointer border-[#F3A94D] rounded-[10px] bg-[#F1EEEB] flex justify-center items-center flex-col p-[35px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75"
+                                fill="none">
+                                <g clip-path="url(#clip0_30_55242)">
+                                    <mask id="mask0_30_55242" style="mask-type:luminance" maskUnits="userSpaceOnUse"
+                                        x="0" y="0" width="75" height="75">
+                                        <path d="M0 0H75V75H0V0Z" fill="white" />
+                                    </mask>
+                                    <g mask="url(#mask0_30_55242)">
+                                        <mask id="mask1_30_55242" style="mask-type:luminance" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="75" height="75">
+                                            <path d="M0 0H75V75H0V0Z" fill="white" />
+                                        </mask>
+                                        <g mask="url(#mask1_30_55242)">
+                                            <path
+                                                d="M62.5068 12.5H12.5067C9.06934 12.5 6.25684 15.3126 6.25684 18.75V56.25C6.25684 59.6874 9.06934 62.5001 12.5067 62.5001H62.5068C65.9442 62.5001 68.7567 59.6874 68.7567 56.25V18.75C68.7567 15.3126 65.9442 12.5 62.5068 12.5ZM62.5068 18.75V47.9738L54.288 35.75C53.6943 34.9062 52.7255 34.3751 51.6942 34.3751H51.6632C50.6319 34.3751 49.6631 34.9062 49.0694 35.7813L43.4052 44.4477L32.3504 26.4999C31.7879 25.5624 30.788 25.0001 29.7255 25.0001H29.6943C28.6317 25.0001 27.6318 25.5312 27.0692 26.4375L12.5067 49.2329V18.75H62.5068Z"
+                                                fill="#F3A94D" />
+                                        </g>
+                                    </g>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_30_55242">
+                                        <rect width="75" height="75" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <p class="text-xl font-bold text-[#F3A94D] mt-[5px] mb-[15px]">
+                                將圖片拖到這裡
+                            </p>
+                            <div class="text-center">
+                                <svg width="180" height="27" viewBox="0 0 180 27" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M90.56 4.08H93.12C93 11.98 94.88 20.32 96.58 20.32C97.02 20.32 97.24 19.26 97.34 16.74C97.88 17.32 98.74 17.9 99.42 18.16C99.04 21.94 98.22 22.84 96.36 22.84C92.24 22.84 90.62 12.88 90.56 4.08ZM94 5.44L95.42 3.98C96.48 4.44 97.84 5.24 98.5 5.86L97 7.48C96.38 6.86 95.06 6 94 5.44ZM95.96 10.3L98.38 10.86C96.72 16.16 93.86 20.38 90.04 22.96C89.66 22.48 88.7 21.54 88.16 21.12C91.92 18.92 94.56 15.08 95.96 10.3ZM81.06 6.96H98.96V9.32H81.06V6.96ZM80.98 19.24C83.24 18.86 86.72 18.2 89.94 17.52L90.14 19.82C87.14 20.5 83.86 21.2 81.42 21.72L80.98 19.24ZM84.2 12.6V14.92H87.18V12.6H84.2ZM82.02 10.58H89.52V16.92H82.02V10.58Z"
+                                        fill="#676767" />
+                                    <line y1="14.5" x2="68" y2="14.5" stroke="#676767" />
+                                    <line x1="112" y1="14.5" x2="180" y2="14.5" stroke="#676767" />
+                                </svg>
+                            </div>
+
+                            <button class="btn mt-[20px] bg-[#F3A94D] px-[60px] py-[14px] text-white rounded-[5px]">
+                                上傳檔案
+                            </button>
+                        </label>
+                    </div>
+
+                    <div class="card mb-[30px] bg-white p-[24px] rounded-[10px]">
+                        <img src="img/car1.png" class="w-full object-cover" alt="">
+
+                        <div class="grid mt-[20px] md:grid-cols-4 grid-cols-3 gap-[20px]">
+                            <img src="img/car1.png" class="w-full" alt="">
+                            <img src="img/car2.png" class="w-full" alt="">
+                            <img src="img/car3.png" class="w-full" alt="">
+                            <img src="img/car4.png" class="w-full" alt="">
+                            <img src="img/car5.png" class="w-full" alt="">
+                            <img src="img/car1.png" class="w-full" alt="">
+                            <img src="img/car2.png" class="w-full" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-7/12">
+                    <div class="card bg-white p-[30px] rounded-[10px]">
+                        <p class="text-xl text-[#909090] font-bold mb-[20px]">
+                            型號及價格
+                        </p>
+
+                        <div class="form-group mb-[20px]">
+                            <label for="" class="text-[#0d0d0d] text-sm font-bold mb-[10px] block">
+                                品牌及型號
+                            </label>
+                            <input type="text" class="border h-[48px] px-4 rounded-[5px] border-[#BCBCBC] w-full"
+                                name="" id="">
+                        </div>
+                        <div class="form-group mb-[20px]">
+                            <label for="" class="text-[#0d0d0d] text-sm font-bold mb-[10px] block">
+                                汽車型號
+                            </label>
+                            <input type="text" class="border h-[48px] px-4 rounded-[5px] border-[#BCBCBC] w-full"
+                                name="" id="">
+                        </div>
+                        <div class="form-group mb-[40px]">
+                            <label for="" class="text-[#0d0d0d] text-sm font-bold mb-[10px] block">
+                                車身類型
+                            </label>
+                            <input type="text" class="border h-[48px] px-4 rounded-[5px] border-[#BCBCBC] w-full"
+                                name="" id="">
+                        </div>
+
+                        <p class="text-xl text-[#909090] font-bold mb-[20px]">
+                            主要資料
+                        </p>
+                        <div class="form-group mb-[40px]">
+                            <label for="" class="text-[#0d0d0d] text-sm font-bold mb-[10px] block">
+                                里程数 (KM)
+                            </label>
+                            <input type="text" class="border h-[48px] px-4 rounded-[5px] border-[#BCBCBC] w-full"
+                                name="" id="">
+                        </div>
+                        <div class="form-group mb-[40px]">
+                            <label for="" class="text-[#0d0d0d] text-sm font-bold mb-[10px] block">
+                                註冊日期
+                            </label>
+                            <input type="date" class="border h-[48px] px-4 rounded-[5px] border-[#BCBCBC] w-full"
+                                name="" id="">
+                        </div>
+                        <div class="form-group mb-[40px]">
+                            <label for="" class="text-[#0d0d0d] text-sm font-bold mb-[10px] block">
+                                前車主數量
+                            </label>
+                            <input type="text" class="border h-[48px] px-4 rounded-[5px] border-[#BCBCBC] w-full"
+                                name="" id="">
+                        </div>
+                        <div class="form-group mb-[40px]">
+                            <label for="" class="text-[#0d0d0d] text-sm font-bold mb-[10px] block">
+                                座位數目
+                            </label>
+                            <div class="flex flex-wrap justify-start items-center gap-[20px]">
+                                <div class="radio">
+                                    <input type="radio" name="val" value="2" name="" id="b2">
+                                    <label for="b2" class="radio-btn">2</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="val" value="4" name="" id="b4">
+                                    <label for="b4" class="radio-btn">4</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="val" value="5" name="" id="b5">
+                                    <label for="b5" class="radio-btn">5</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="val" value="6" name="" id="b6">
+                                    <label for="b6" class="radio-btn">6</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="val" value="7" name="" id="b7">
+                                    <label for="b7" class="radio-btn">7</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="val" value="8+" name="" id="b8">
+                                    <label for="b8" class="radio-btn">8+</label>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-xl text-[#909090] font-bold mt-[40px] mb-[20px]">
+                            其他資料
+                        </p>
+                        <div class="form-group mb-[20px]">
+                            <label for="" class="text-[#0d0d0d] text-sm font-bold mb-[10px] block">
+                                地區
+                            </label>
+                            <select name="" class="border h-[48px] px-4 rounded-[5px] border-[#BCBCBC] w-full" id="">
+                                <option value="沙田">沙田</option>
+                            </select>
+                        </div>
+                        <div class="form-group mb-[20px]">
+                            <label for="" class="text-[#0d0d0d] text-sm font-bold mb-[10px] block">
+                                行貨／水貨
+                            </label>
+                            <select name="" class="border h-[48px] px-4 rounded-[5px] border-[#BCBCBC] w-full" id="">
+                                <option value="行貨">行貨</option>
+                            </select>
+                        </div>
+                        <div class="form-group mb-[20px]">
+                            <label for="" class="text-[#0d0d0d] text-sm font-bold mb-[10px] block">
+                                傳動
+                            </label>
+                            <select name="" class="border h-[48px] px-4 rounded-[5px] border-[#BCBCBC] w-full" id="">
+                                <option value="自動波">自動波</option>
+                            </select>
+                        </div>
+                        <div class="form-group mb-[20px]">
+                            <label for="" class="text-[#0d0d0d] text-sm font-bold mb-[10px] block">
+                                製造年份
+                            </label>
+                            <select name="" class="border h-[48px] px-4 rounded-[5px] border-[#BCBCBC] w-full" id="">
+                                <option value="2014">2014</option>
+                            </select>
+                        </div>
+                        <div class="form-group mb-[20px]">
+                            <label for="" class="text-[#0d0d0d] text-sm font-bold mb-[10px] block">
+                                首次登記年份
+                            </label>
+                            <select name="" class="border h-[48px] px-4 rounded-[5px] border-[#BCBCBC] w-full" id="">
+                                <option value="2014">2014</option>
+                            </select>
+                        </div>
+                        <div class="form-group mb-[20px]">
+                            <label for="" class="text-[#0d0d0d] text-sm font-bold mb-[10px] block">
+                                編號
+                            </label>
+                            <select name="" class="border h-[48px] px-4 rounded-[5px] border-[#BCBCBC] w-full" id="">
+                                <option value="2014">MS0010527</option>
+                            </select>
+                        </div>
+                        <div class="form-group mb-[32px]">
+                            <label for="" class="text-[#0d0d0d] text-sm font-bold mb-[10px] block">
+                                簡評
+                            </label>
+                            <textarea name="" class="border resize-none px-4 rounded-[5px] border-[#BCBCBC] w-full"
+                                id="" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <div class="btns flex md:flex-row flex-col gap-[20px] items-center">
+                            <button
+                                class="bg-[#F3A94D] border-2 border-[#F3A94D] py-[15px] px-[60px] text-white text-lg font-[500] rounded-[8px]">
+                                篩選
+                            </button>
+                            <button
+                                class="bg-[#fff] border-2 border-[#F3A94D] py-[15px] px-[60px] text-[#F3A94D] text-lg font-[500] rounded-[8px]">
+                                篩選
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- post listing -->
+
+    <!-- footer -->
+    <footer class="bg-[#161616] pt-[50px] pb-[20px]">
+        <div class="container">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-40px">
+                <div class="item">
+                    <a href="">
+                        <img src="img/coreharry.svg" class="mb-[35px] mt-[5px]" alt="" />
+                    </a>
+                    <a href="" class="flex items-center text-white mb-[10px] gap-[10px]">
+                        <i class="fa fa-envelope text-[#F3A94D]"></i>
+                        <span>carhero@gmail.com</span>
+                    </a>
+                    <a href="" class="flex items-center text-white mb-[10px] gap-[10px]">
+                        <i class="fa fa-envelope text-[#F3A94D]"></i>
+                        <span> (+852) 2324 3242 </span>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <p class="text-2xl font-bold text-white mb-[25px]">Quick Links</p>
+                    <ul>
+                        <li class="mb-3">
+                            <a href="" class="text-white ferid-reserve mavesound">
+                                車盤列表
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="mb-3">
+                            <a href="" class="text-white ferid-reserve"> 刊登車盤 </a>
+                        </li>
+                    </ul>
+                    <ul class="mb-3">
+                        <li>
+                            <a href="" class="text-white ferid-reserve"> 我的帳戶 </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <p class="text-2xl font-bold text-white mb-[25px]">關於我們</p>
+                    <ul>
+                        <li class="mb-3">
+                            <a href="" class="text-white ferid-reserve mavesound">
+                                車盤列表
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="mb-3">
+                            <a href="" class="text-white ferid-reserve"> 刊登車盤 </a>
+                        </li>
+                    </ul>
+                    <ul class="mb-3">
+                        <li>
+                            <a href="" class="text-white ferid-reserve"> 我的帳戶 </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <p class="text-2xl font-bold text-white mb-[25px]">搜索網站</p>
+
+                    <form action=""
+                        class="mb-3 bg-white px-[20px] py-[12px] rounded-[5px] flex justify-between items-center">
+                        <input type="text" placeholder="Search here..." class="w-full" name="" id="" />
+                        <i class="fa fa-search text-[#F3A94D]"></i>
+                    </form>
+
+                    <div class="flex social mt-8 justify-start items-center gap-[14px]">
+                        <a href=""
+                            class="icon inline-flex w-[50px] h-[50px] justify-center items-center bg-[#F3A94D] rounded-[5px]">
+                            <i class="fab fa-facebook-f text-white text-2xl"></i>
+                        </a>
+                        <a href=""
+                            class="icon inline-flex w-[50px] h-[50px] justify-center items-center bg-[#F3A94D] rounded-[5px]">
+                            <i class="fab fa-instagram text-white text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mt-[150px]" />
+
+            <div class="flex sm-text mt-3 justify-between items-center">
+                <div class="flex justify-start items-center gap-[10px]">
+                    <a href="" class="text-white"> English </a>
+                    <a href="" class="text-white"> | </a>
+                    <a href="" class="text-white"> Chinese </a>
+                </div>
+                <p class="text-white">© 2022 CarHero All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- alpine -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+    <!-- app js -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

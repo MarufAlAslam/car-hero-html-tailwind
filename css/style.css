@@ -105,6 +105,32 @@ input[type="range"]::-webkit-slider-thumb {
   color: #f3a94d;
   border-bottom: 3px solid #f3a94d;
 }
+
+/* post listing */
+.radio-btn {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #bcbcbc;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"]:checked + .radio-btn {
+  border: 1px solid #f3a94d;
+  background-color: #f3a94d;
+  color: white;
+}
+select {
+  appearance: none;
+  background: url("../img/chevron.png");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: 97%;
+}
 @media screen and (max-width: 767px) {
   .menu {
     background: white;
