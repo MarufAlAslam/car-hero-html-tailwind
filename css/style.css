@@ -91,13 +91,19 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 15px;
   overflow: hidden;
 }
-.dropdown-items li a{
+.dropdown-items li a {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.dropdown-items *{
+.dropdown-items * {
   background-color: white;
   border-radius: 0;
+}
+
+/* my listings */
+.tabBtn.active {
+  color: #f3a94d;
+  border-bottom: 3px solid #f3a94d;
 }
 @media screen and (max-width: 767px) {
   .menu {
@@ -158,15 +164,19 @@ input[type="range"]::-webkit-slider-thumb {
   }
 
   /* car browsing history */
-  .history p{
+  .history p {
     font-size: 14px;
   }
 
   /* profile */
-  .profile p{
+  .profile p {
     font-size: 13px;
   }
-  .profile .card{
+  .profile .card {
     padding: 15px 18px;
+  }
+
+  .listings button {
+    width: 100%;
   }
 }
