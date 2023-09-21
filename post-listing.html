@@ -326,8 +326,10 @@
                                 篩選
                             </button>
                             <button
+                            type="button"
+                            id="make-opener"
                                 class="bg-[#fff] border-2 border-[#F3A94D] py-[15px] px-[60px] text-[#F3A94D] text-lg font-[500] rounded-[8px]">
-                                篩選
+                                護理
                             </button>
                         </div>
                     </div>
@@ -431,6 +433,221 @@
     </footer>
     <!-- footer -->
 
+
+    <!-- car make modal -->
+    <div class="car-make" id="car-make">
+        <div id="make-closer" class="bg bg-black opacity-[50%] fixed top-0 left-0 h-screen w-full z-20"></div>
+        <div class="car-make-modal bg-white fixed top-[50%] left-[50%] p-[30px] z-50 rounded-[15px] md:w-[75%] max-h-[85vh] overflow-y-auto w-[98%] translate-x-[-50%] translate-y-[-50%] pb-10">
+            <h2 class="font-bold text-xl">汽車型號</h2>
+
+            <form action="" class="mt-[40px]">
+                <div class="flex justify-between items-center border border-[#BCBCBC] rounded-[5px]">
+                    <i class="fa fa-search p-[15px]"></i>
+                    <input type="text" class="w-full mr-[15px] h-full py-[10px]">
+                </div>
+            </form>
+
+
+            <div class="grid lg:grid-cols-3 grid-cols-1 gap-[50px] mt-[25px]">
+                <div class="item arrow">
+                    <p class="text-[#909090] font-bold mb-[15px]">汽車品牌</p>
+                    <img src="img/arr.png" class="arr" alt="">
+
+                    <div class="scrollable h-[500px] overflow-y-auto border-2 border-[#D9D9D9]">
+                        <div class="flex make-item border-b-2 border-[#D9D9D9] justify-between items-center py-[15px] px-[20px]">
+                            <div class="left flex justify-start items-center gap-4">
+                                <img src="img/make1.png" alt="">
+                                <span class="text-sm text-[#161616]">BMW</span>
+                            </div>
+                            <a href="">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="flex make-item border-b-2 border-[#D9D9D9] justify-between items-center py-[15px] px-[20px]">
+                            <div class="left flex justify-start items-center gap-4">
+                                <img src="img/make2.png" alt="">
+                                <span class="text-sm text-[#161616]">BMW</span>
+                            </div>
+                            <a href="">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="flex make-item border-b-2 border-[#D9D9D9] justify-between items-center py-[15px] px-[20px]">
+                            <div class="left flex justify-start items-center gap-4">
+                                <img src="img/make3.png" alt="">
+                                <span class="text-sm text-[#161616]">BMW</span>
+                            </div>
+                            <a href="">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="flex make-item border-b-2 border-[#D9D9D9] justify-between items-center py-[15px] px-[20px]">
+                            <div class="left flex justify-start items-center gap-4">
+                                <img src="img/make4.png" alt="">
+                                <span class="text-sm text-[#161616]">BMW</span>
+                            </div>
+                            <a href="">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="flex make-item border-b-2 border-[#D9D9D9] justify-between items-center py-[15px] px-[20px]">
+                            <div class="left flex justify-start items-center gap-4">
+                                <img src="img/make5.png" alt="">
+                                <span class="text-sm text-[#161616]">BMW</span>
+                            </div>
+                            <a href="">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="flex make-item border-b-2 border-[#D9D9D9] justify-between items-center py-[15px] px-[20px]">
+                            <div class="left flex justify-start items-center gap-4">
+                                <img src="img/make6.png" alt="">
+                                <span class="text-sm text-[#161616]">BMW</span>
+                            </div>
+                            <a href="">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="flex make-item border-b-2 border-[#D9D9D9] justify-between items-center py-[15px] px-[20px]">
+                            <div class="left flex justify-start items-center gap-4">
+                                <img src="img/make1.png" alt="">
+                                <span class="text-sm text-[#161616]">BMW</span>
+                            </div>
+                            <a href="">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="flex make-item border-b-2 border-[#D9D9D9] justify-between items-center py-[15px] px-[20px]">
+                            <div class="left flex justify-start items-center gap-4">
+                                <img src="img/make2.png" alt="">
+                                <span class="text-sm text-[#161616]">BMW</span>
+                            </div>
+                            <a href="">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="flex make-item border-b-2 border-[#D9D9D9] justify-between items-center py-[15px] px-[20px]">
+                            <div class="left flex justify-start items-center gap-4">
+                                <img src="img/make3.png" alt="">
+                                <span class="text-sm text-[#161616]">BMW</span>
+                            </div>
+                            <a href="">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="flex make-item border-b-2 border-[#D9D9D9] justify-between items-center py-[15px] px-[20px]">
+                            <div class="left flex justify-start items-center gap-4">
+                                <img src="img/make4.png" alt="">
+                                <span class="text-sm text-[#161616]">BMW</span>
+                            </div>
+                            <a href="">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="flex make-item border-b-2 border-[#D9D9D9] justify-between items-center py-[15px] px-[20px]">
+                            <div class="left flex justify-start items-center gap-4">
+                                <img src="img/make5.png" alt="">
+                                <span class="text-sm text-[#161616]">BMW</span>
+                            </div>
+                            <a href="">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="flex make-item border-b-2 border-[#D9D9D9] justify-between items-center py-[15px] px-[20px]">
+                            <div class="left flex justify-start items-center gap-4">
+                                <img src="img/make6.png" alt="">
+                                <span class="text-sm text-[#161616]">BMW</span>
+                            </div>
+                            <a href="">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item arrow">
+                    <p class="text-[#909090] font-bold mb-[15px]">汽車型號</p>
+                    <img src="img/arr.png" class="arr" alt="">
+
+                    <div class="scrollable h-[500px] overflow-y-auto border-2 border-[#D9D9D9]">
+                        <div class="flex border-b-2 border-[#D9D9D9] justify-between items-center py-[15px] px-[20px]">
+                            <div class="left flex justify-start items-center gap-4">
+                                <span class="text-sm text-[#161616]">A1</span>
+                            </div>
+                            <a href="">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="flex border-b-2 border-[#D9D9D9] justify-between items-center py-[15px] px-[20px]">
+                            <div class="left flex justify-start items-center gap-4">
+                                <span class="text-sm text-[#161616]">A2</span>
+                            </div>
+                            <a href="">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="flex border-b-2 border-[#D9D9D9] justify-between items-center py-[15px] px-[20px]">
+                            <div class="left flex justify-start items-center gap-4">
+                                <span class="text-sm text-[#161616]">A3</span>
+                            </div>
+                            <a href="">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="flex border-b-2 border-[#D9D9D9] justify-between items-center py-[15px] px-[20px]">
+                            <div class="left flex justify-start items-center gap-4">
+                                <span class="text-sm text-[#161616]">A4</span>
+                            </div>
+                            <a href="">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="flex border-b-2 border-[#D9D9D9] justify-between items-center py-[15px] px-[20px]">
+                            <div class="left flex justify-start items-center gap-4">
+                                <span class="text-sm text-[#161616]">A5</span>
+                            </div>
+                            <a href="">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="flex border-b-2 border-[#D9D9D9] justify-between items-center py-[15px] px-[20px]">
+                            <div class="left flex justify-start items-center gap-4">
+                                <span class="text-sm text-[#161616]">LS</span>
+                            </div>
+                            <a href="">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <p class="text-[#909090] font-bold mb-[15px]">汽車型號</p>
+
+                    <div class="scrollable h-[500px] overflow-y-auto border-2 border-[#D9D9D9]">
+                       <div class="flex border-b-2 border-[#D9D9D9] justify-between items-center py-[15px] px-[20px]">
+                            <div class="left flex justify-start items-center gap-4">
+                                <span class="text-sm text-[#161616]">Auto-Fill</span>
+                            </div>
+                            <a href="">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="flex border-b-2 border-[#D9D9D9] justify-between items-center py-[15px] px-[20px]">
+                            <div class="left flex justify-start items-center gap-4">
+                                <span class="text-sm text-[#161616]">Manually enter details</span>
+                            </div>
+                            <a href="">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- car make modal -->
+
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -439,6 +656,20 @@
 
     <!-- app js -->
     <script src="js/app.js"></script>
+
+    <script>
+        const makeOpener = document.querySelector('#make-opener');
+        const makeCloser = document.querySelector('#make-closer');
+        const makeModal = document.querySelector('#car-make');
+        
+        makeOpener.addEventListener('click', function () {
+            makeModal.classList.add('active');
+        });
+
+        makeCloser.addEventListener('click', function () {
+            makeModal.classList.remove('active');
+        });
+    </script>
 </body>
 
 </html>

@@ -131,6 +131,38 @@ select {
   background-repeat: no-repeat;
   background-position: 97%;
 }
+
+/* car-make-modal */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.car-make-modal::-webkit-scrollbar,
+.car-make-modal *::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.car-make-modal,
+.car-make-modal * {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.make-item:last-child {
+  border: unset;
+}
+.item.arrow{
+  position: relative;
+}
+img.arr {
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.car-make{
+  display: none;
+}
+.car-make.active{
+  display: block;
+}
 @media screen and (max-width: 767px) {
   .menu {
     background: white;
@@ -204,5 +236,9 @@ select {
 
   .listings button {
     width: 100%;
+  }
+
+  img.arr{
+    display: none;
   }
 }

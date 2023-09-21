@@ -11,3 +11,4 @@ menuBg.addEventListener("click", () => {
   menu.classList.toggle("active");
   menuBg.classList.toggle("active");
 });
+
